@@ -1,0 +1,41 @@
+
+body {
+    width: 99%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    flex: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(31, 88, 102);
+}
+.main-container {
+    display: flex;
+    background-color: rgb(187, 182, 231);
+    flex: 1;
+}
+
+nav {
+    background-color: rgb(24, 24, 24);
+    color: cornsilk;
+    padding: 1rem;
+    padding-bottom: 9rem;
+    padding-top: 9rem;
+    flex: 1;
+
+
+}
+article{
+    padding: 2rem;
+    flex: 2;
+}
+footer {
+    width: 100%;
+    background-color: rgb(37, 37, 37);
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    color: blanchedalmond;
+}
