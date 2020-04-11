@@ -22,11 +22,19 @@ nav {
     background-color: rgb(24, 24, 24);
     color: cornsilk;
     padding: 1rem;
-    padding-bottom: 9rem;
-    padding-top: 9rem;
+    padding: 2rem;
     flex: 1;
-
-
+}
+li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: cornsilk;
+    text-decoration: none;
 }
 article{
     padding: 2rem;
