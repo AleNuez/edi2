@@ -1,6 +1,7 @@
 
 body {
     width: 99%;
+    height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     display: flex;
@@ -10,12 +11,12 @@ header {
     flex: 1;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgb(31, 88, 102);
+    background: linear-gradient(40deg, rgb(56, 96, 112),rgb(144, 171, 189));
 }
 .main-container {
     display: flex;
     background-color: rgb(187, 182, 231);
-    flex: 1;
+    flex: 5;
 }
 
 nav {
@@ -36,13 +37,41 @@ a {
     color: cornsilk;
     text-decoration: none;
 }
+.ejercicios a, .proyectos a {
+    color: black;
+}
 article{
     padding: 2rem;
-    flex: 2;
+    flex: 3;
 }
+.row {
+    display: flex;
+    justify-content: center;
+}
+.col1, .col2, .col3 {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.proyectos p, .ejercicios p {
+    margin-top: 2rem;
+}
+.proyectos, .ejercicios {
+    display: none;
+}
+.active {
+    background-color: rgb(185, 185, 185);
+    color: black;
+}
+li:hover {
+    background-color: rgb(112, 112, 112);
+}
+
 footer {
     width: 100%;
-    background-color: rgb(37, 37, 37);
+    background: linear-gradient(40deg, rgb(0, 0, 0),rgb(95, 95, 95));
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
     color: blanchedalmond;
