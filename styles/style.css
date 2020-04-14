@@ -61,9 +61,13 @@ article{
 .proyectos, .ejercicios {
     display: none;
 }
-.active {
-    background-color: rgb(185, 185, 185);
-    color: black;
+.btn-ejercicios , .btn-proyectos {
+    margin: 0;
+    padding: 1rem;
+}
+.btn-ejercicios.active, .btn-proyectos.active {
+    background-color: rgb(143, 143, 143);
+ 
 }
 li:hover {
     background-color: rgb(112, 112, 112);
