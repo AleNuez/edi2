@@ -1,23 +1,17 @@
-hideEjercicios();
-hideProyectos();
+var divejercicios = document.querySelector(".ejercicios");
+var divproyectos = document.querySelector(".proyectos");
+var btnejercicios = document.querySelector(".btn-ejercicios");
+var btnproyectos = document.querySelector(".btn-proyectos");
 
-function hideEjercicios() {
-    var section = document.querySelector(".ejercicios");
-    var othersection = document.querySelector(".proyectos");
-    var btnSection = document.querySelector(".btn-ejercicios");
-    if (section.style.display == "none") {
-        section.style.display = "block";
-        btnSection.classList.toggle("active");
-        othersection.style.display = "none";
-    } else section.style.display = "none";
+divejercicios.style.display = "block";
+divproyectos.style.display = "none";
+
+function hideEjercicios(divejercicios,divproyectos) {
+    divejercicios.style.display = "block";
+    divproyectos.style.display = "none";
 }
-function hideProyectos() {
-    var section = document.querySelector(".proyectos");
-    var othersection = document.querySelector(".ejercicios");
-    var btnSection = document.querySelector(".btn-proyectos");
-    if (section.style.display == "none") {
-        section.style.display = "block";
-        btnSection.classList.toggle("active");
-        othersection.style.display = "none";
-    } else section.style.display = "none";
+function hideProyectos(divproyectos,divejercicios) {
+    divproyectos.style.display = "block";
+    divejercicios.style.display = "none";
+    
 }
