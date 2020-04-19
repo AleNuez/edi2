@@ -77,7 +77,7 @@ article{
 .proyectos p, .ejercicios p {
     margin-top: 2rem;
 }
-.proyectos, .ejercicios {
+.proyectos, .ejercicios, .ejerciciosdos {
     display: none;
 }
 .btn-ejercicios , .btn-proyectos {
