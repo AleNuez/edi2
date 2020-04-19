@@ -45,6 +45,14 @@ a {
     color: cornsilk;
     text-decoration: none;
 }
+.edi-button {
+    padding: 2rem 6rem;
+    background: none;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-size: 1.6rem;
+}
 .ejercicios a, .proyectos a {
     color: black;
 }
@@ -74,12 +82,12 @@ article{
 }
 .btn-ejercicios , .btn-proyectos {
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .btn-ejercicios.active, .btn-proyectos.active {
     background-color: rgb(143, 143, 143);
- 
 }
+
 li:hover {
     background-color: rgb(112, 112, 112);
 }
