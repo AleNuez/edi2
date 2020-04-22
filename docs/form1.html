@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Registro</title>
 </head>
 <body>
-    <div class="container">
-        
+    <div class="form-container">
         <form action="#">
+            <fieldset>
             <h1>Registrate</h1>
-            <div class="name-field"><label for="name">Nombre</label><input type="text"></div>
-            <div class="surname-field"><label for="surname"></label><input type="text"></div>
+            <hr class="separator">
+            <div class="name-field"><label for="name">Nombre</label><input placeholder="Nombre aqui" id="name" type="text" required></div>
+            <div class="surname-field"><label for="surname">Apellido</label><input placeholder="Apellido aqui" id="surname" type="text" required></div>
+            <div class="email-field"><label for="email">Correo Eléctronico</label><input placeholder="email@ejemplo.com" size="20" id="email" type="email" required></div>
+            <div class="pass-field"><label for="password">Contraseña</label><input placeholder="Contraseña aqui" required maxlength="8" id="password" type="password"></div>
+            <div class="agreement"><input type="checkbox" name="agree" id="agree" checked required><label for="agree">He leído y estoy de acuerdo con los <a href="#">términos</a>.</label></div>
+            <input class="form-submit" type="submit">
+            </fieldset>
         </form>
     </div>
 </body>
