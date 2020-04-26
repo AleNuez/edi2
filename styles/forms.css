@@ -1,12 +1,25 @@
-body {
+.form1 {
     background-image: linear-gradient(40deg, #e6f6ff, rgb(232, 250, 255));
+}
+.form2 {
+    background-image: linear-gradient(40deg, #f3e6ff, rgb(243, 232, 255));
+}
+.form3 {
+    background-image: linear-gradient(40deg, #f8ffe6, rgb(255, 255, 232));
+}
+.fields {
+    display: inline-block;
+
 }
 fieldset {
     border-radius: 10px;
     padding: 2rem;
+    margin: 1rem;
 }
 .form-container {
-    margin-top: 10rem;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
 }
 .separator {
     width: 65%;

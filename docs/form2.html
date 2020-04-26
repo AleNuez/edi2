@@ -7,19 +7,49 @@
     <link rel="stylesheet" href="../styles/style.css">
     <title>Reserva de viaje</title>
 </head>
-<body>
+<body class="form2">
     <div class="form-container">
         <form action="#">
-            <fieldset>
             <h1>Reserva tu lugar</h1>
             <hr class="separator">
-            <div class="name-field"><label for="name">Nombre</label><input placeholder="Nombre aqui" id="name" type="text" required></div>
-            <div class="surname-field"><label for="surname">Apellido</label><input placeholder="Apellido aqui" id="surname" type="text" required></div>
-            <div class="email-field"><label for="email">Correo Eléctronico</label><input placeholder="email@ejemplo.com" size="20" id="email" type="email" required></div>
-            <div class="pass-field"><label for="password">Contraseña</label><input placeholder="Contraseña aqui" required maxlength="8" id="password" type="password"></div>
-            <div class="agreement"><input type="checkbox" name="agree" id="agree" checked required><label for="agree">He leído y estoy de acuerdo con los <a href="#">términos</a>.</label></div>
-            <input class="form-submit" type="submit">
+            <div class="fields">
+            <fieldset class="f1">
+                <h2>Datos Personales</h2>
+                <hr class="separator">
+                <div class="name-field"><label for="name">Nombre</label><input placeholder="Nombre aqui" id="name" type="text" required></div>
+                <div class="surname-field"><label for="surname">Apellido</label><input placeholder="Apellido aqui" id="surname" type="text" required></div>
+               <div class="gender-field"><label for="male">Hombre</label><input type="radio" name="gender" id="male"><label for="female">Mujer</label><input type="radio" name="gender" id="female"></div>
+               <div class="dob-field"><label for="dob">Fecha de Nacimiento</label><input type="date" name="dob" id="dob"></div>
+               <div class="email-field"><label for="email">Correo Eléctronico</label><input placeholder="email@ejemplo.com" id="email" type="email" required></div>
+                <div class="phone-field"><label for="phone">Teléfono</label><input placeholder="Teléfono aqui" id="phone" type="number" required></div>
             </fieldset>
+            <fieldset class="f2">
+                <h2>Detalles del pedido</h2>
+                <hr class="separator">
+                <div class="name-field"><label for="name">Destino</label><input placeholder="Nombre aqui" id="name" type="text" required></div>
+                <div class="dob-field"><label for="dob">Fecha de viaje</label><input type="date" name="dob" id="dob"></div>
+                <div class="number-field"><label for="num">Cantidad de personas</label><input type="number" name="num" id="num" min="1" max="10" value="1"></div>
+                <div class="offer-field"><label for="pack">Paquete</label><input placeholder="Elija oferta" id="name" type="text" list="offers" required>
+                 <datalist id="offers">
+                    <option value="All inlusive">
+                    <option value="VIP 2.0">
+                    <option value="Oro">
+                    <option value="Plata">
+                    <option value="Bronce">
+                  </datalist></div>
+                  <div class="payment-field"><label for="pament">Modo de pago</label><input placeholder="Elija método de pago" id="payment" type="text" list="paymode" required>
+                    <datalist id="paymode">
+                       <option value="Efectivo">
+                       <option value="Tarjeta">
+                       <option value="Bitcoin">
+                       <option value="Cupón">
+                       <option value="Otro">
+                     </datalist></div>
+                </fieldset>
+            </div>
+                <div class="agreement"><input type="checkbox" name="agree" id="agree" checked required><label for="agree">He leído y estoy de acuerdo con los <a href="#">términos</a>.</label></div>
+            <input class="form-submit" value="Guardar y Pagar" type="submit">
+            
         </form>
     </div>
 </body>
