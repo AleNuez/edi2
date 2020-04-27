@@ -13,10 +13,37 @@ header {
     color: whitesmoke;
     background: linear-gradient(40deg, rgb(56, 96, 112),rgb(144, 171, 189));
 }
+.botonera {
+    margin: 2rem;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-button {
+    padding: 2rem;
+    border-radius: 9px;
+}
 .header-img {
     background-image: url("../img/hero-main.jpg");
     padding: 1rem;
     background-size: cover;
+}
+#header-home {
+    background-image: url("../img/home.png");
+    background-repeat: no-repeat;
+    background-size: 10rem 7rem;
+    background-position: -47px -24px ;
+}
+#header-back {
+    background-image: url("../img/back.png");
+    background-repeat: no-repeat;
+    background-size: 7rem 3rem;
+    background-position: -25px 7px ;
+}
+.h-link {
+    padding: 2rem;
 }
 
 .edi-button {
