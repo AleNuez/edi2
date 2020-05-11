@@ -1,0 +1,140 @@
+* {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;   
+}
+main {
+    flex-direction: column;
+    display: flex;
+    flex: 1;
+}
+#header {
+    background: linear-gradient(40deg, #63b9ff, #add7fa);
+}
+#article {
+    background: linear-gradient(40deg, #fff, #fff);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    flex: 3;
+}
+.card {
+    box-shadow: 0px 4px 4px -3px black;
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+    border-radius: 10px;
+    height: 10rem;
+    margin: 1rem;
+    background-color: whitesmoke;
+}
+#navbar {
+    background: linear-gradient(40deg, #5ed8ff, #d2f1fc);
+
+}
+#aside {
+    background-color: #AFDCF0;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    flex: 1 5rem;
+}
+#footer {
+    background: linear-gradient(40deg, #4ab1e8, #99cce7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.header-brand {
+    text-align: left;
+    margin-left: 5px;   
+}
+.header-button {
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    margin: -8px 8px;
+    box-shadow: 0px 4px 4px -3px black;  
+}
+.copyright {
+    text-align: center;
+    font-size: smaller;
+}
+
+@media (min-width: 600px )  {
+  
+    body {
+        flex-direction: column;
+    }
+    .main-without-nav {
+        display: flex;
+        flex: 1;
+    }
+    #navbar {
+       
+        flex: 0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        flex: 1 5rem;
+    }
+    #article {
+        background-color:#3BEBFF ;
+        background: linear-gradient(40deg,#3BEBFF, rgb(148, 241, 252));
+        flex-direction: column;
+        flex: 2;
+        display: flex;
+    }
+    #aside {
+        background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
+        flex-direction: column;
+        display: flex;
+        flex: 1;
+    }
+    #header {
+        background: linear-gradient(40deg, #63b9ff, #add7fa);
+        padding: 1rem;
+    }
+    #footer {
+        background: linear-gradient(40deg, #4ab1e8, #99cce7);
+    }
+}
+
+@media (min-width: 890px) {
+    body {
+        flex-direction: column;
+    }
+    main {
+        flex-direction: row;
+        flex: 1;
+    }
+    .main-without-nav{
+        flex: 3;
+    }
+    #navbar {
+        background: linear-gradient(40deg, #5ed8ff, #d2f1fc);
+        flex: 1;
+        
+    }
+    #article {
+        background: linear-gradient(40deg, #fff, #fff);
+    
+    }
+    #aside {
+        background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
+        
+    }
+    #header {
+        background: linear-gradient(40deg, #63b9ff, #add7fa);
+        
+    }
+    #footer {
+        background: linear-gradient(40deg, #4ab1e8, #99cce7);
+    }
+    #header-menu {
+        display: none;
+    }
+}
+

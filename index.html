@@ -10,70 +10,75 @@
 <header>
     <div class="header-img">
     <div class="header-content">
-    <h1>Espacio de Definición II</h1>
-    <div class="botonera"><button class="header-button" id="header-home"><a class="h-link" href="/index.html"></a></button>
-    <button class="header-button" id="header-back"></button></div>
+        <h1>Espacio de Definición II</h1>
     </div>
-</div>
+    </div>
 </header>
 <div class="main-container">
 <nav>
     <ul>
         <p><b>Contenido</b></p>
         <hr>
-        <li class="btn-ejercicios"><button  class="edi-button" onclick="hideEjercicios(divejercicios,divproyectos,divejerciciosdos)">Clase 1</button></li>
+        <li class="btn-proyectos"><button class="edi-button" onclick="hideProyectos(divproyectos,divejercicios,divejerciciosdos, divejphp)">Proyecto</button></li>
         <hr>
-        <li class="btn-ejerciciosdos"><button  class="edi-button" onclick="hideEjerciciosdos(divejercicios,divproyectos,divejerciciosdos)">Clase 2</button></li>
+        <li class="btn-ejercicios"><button  class="edi-button" onclick="hideEjercicios(divejercicios,divproyectos,divejerciciosdos,divejphp)">Bases HTML</button></li>
         <hr>
-        <li class="btn-proyectos"><button class="edi-button" onclick="hideProyectos(divproyectos,divejercicios,divejerciciosdos)">Proyecto</button></li>
+        <li class="btn-ejerciciosdos"><button  class="edi-button" onclick="hideEjerciciosdos(divejercicios,divproyectos,divejerciciosdos,divejphp)">Ej Formularios</button></li>
         <hr>
+        <li class="btn-ejphp"><button  class="edi-button" onclick="hideEjphp(divejercicios,divproyectos,divejerciciosdos,divejphp)">Ej PHP</button></li>
     </ul>
     
 </nav>
 
 <article>
+    <div class="proyectos">
+        <h2>Proyecto</h2>
+        <div class="row">
+            <div class="col1"><button class="article-button"><p>Consigna</p><small>dada por el profesor</small></button></div>
+            <div class="col2"><button class="article-button"><a href="/docs/proyecto/proyecto.html"><p>Proyecto</p><small>Contenido</small></a></button></div>
+            <div class="col3"><button class="article-button"><p>Detalles</p><small>Acerca de</small></button></div>
+        </div>
+    </div>
     <div class="ejercicios">
         <h2>Primera Clase</h2>
         <div class="row">
-            <div class="col1"><p><a href="./docs/actividad1.html">Actividad 1<br><small>Plantilla</small></a></p></div>
-            <div class="col2"><p><a href="./docs/actividad2.html">Actividad 2<br><small>Caracteres Especiales</small></a></p></div>
-            <div class="col3"><p><a href="./docs/actividad3.html">Actividad 3<br><small>Fuentes</small></a></p></div>
+            <div class="col1"><p><a href="./docs/ej1/actividad1.html">Actividad 1<br><small>Plantilla</small></a></p></div>
+            <div class="col2"><p><a href="./docs/ej1/actividad2.html">Actividad 2<br><small>Caracteres Especiales</small></a></p></div>
+            <div class="col3"><p><a href="./docs/ej1/actividad3.html">Actividad 3<br><small>Fuentes</small></a></p></div>
         </div>
         <div class="row">
-            <div class="col1"><p><a href="./docs/actividad4.html">Actividad 4<br><small>Bordes</small></a></p></div>
-            <div class="col2"><p><a href="./docs/actividad5.html">Actividad 5<br><small>Colores</small></a></p></div>
-            <div class="col3"><p><a href="./docs/actividad6.html">Actividad 6<br><small>Tablas</small></a></p></div>
+            <div class="col1"><p><a href="./docs/ej1/actividad4.html">Actividad 4<br><small>Bordes</small></a></p></div>
+            <div class="col2"><p><a href="./docs/ej1/actividad5.html">Actividad 5<br><small>Colores</small></a></p></div>
+            <div class="col3"><p><a href="./docs/ej1/actividad6.html">Actividad 6<br><small>Tablas</small></a></p></div>
         </div>
         <div class="row">
-            <div class="col1"><p><a href="./docs/actividad7.html">Actividad 7<br><small>Tablas II</small></a></p></div>
-            <div class="col2"><p><a href="./docs/actividad8.html">Actividad 8<br><small>Listas</small></a></p></div>
-            <div class="col3"><p><a href="./docs/actividad9.html">Actividad 9<br><small>Favicon</small></a></p></div>
+            <div class="col1"><p><a href="./docs/ej1/actividad7.html">Actividad 7<br><small>Tablas II</small></a></p></div>
+            <div class="col2"><p><a href="./docs/ej1/actividad8.html">Actividad 8<br><small>Listas</small></a></p></div>
+            <div class="col3"><p><a href="./docs/ej1/actividad9.html">Actividad 9<br><small>Favicon</small></a></p></div>
         </div>
         <div class="row">
-            <div class="col1"><p><a href="./docs/actividad10.html">Actividad 10<br><small>Anclas</small></a></p></div>
-            <div class="col2"><p><a href="./docs/actividad11.html">Actividad 11<br><small>Enlaces</small></a></p></div>
-            <div class="col3"><p><a href="./docs/actividad12.html">Actividad 12<br><small>Videos</small></a></p></div>
+            <div class="col1"><p><a href="./docs/ej1/actividad10.html">Actividad 10<br><small>Anclas</small></a></p></div>
+            <div class="col2"><p><a href="./docs/ej1/actividad11.html">Actividad 11<br><small>Enlaces</small></a></p></div>
+            <div class="col3"><p><a href="./docs/ej1/actividad12.html">Actividad 12<br><small>Videos</small></a></p></div>
         </div>
         <div class="row">
-            <div class="col1"><p><a href="./docs/actividad13.html">Actividad 13<br><small>Mapa de imgs</small></a></p></div>
-            <div class="col2"><p><a href="./docs/actividad14.html">Actividad 14<br><small>Frames</small></a></p></div>
-            <div class="col3"><p><a href="./docs/actividad15.html">Actividad 15<br><small>Iframes</small></a></p></div>
+            <div class="col1"><p><a href="./docs/ej1/actividad13.html">Actividad 13<br><small>Mapa de imgs</small></a></p></div>
+            <div class="col2"><p><a href="./docs/ej1/actividad14.html">Actividad 14<br><small>Frames</small></a></p></div>
+            <div class="col3"><p><a href="./docs/ej1/actividad15.html">Actividad 15<br><small>Iframes</small></a></p></div>
         </div>
     </div>
     <div class="ejerciciosdos">
         <h2>Segunda Clase</h2>
         <div class="row">
-            <div class="col1"><button class="article-button"><a href="./docs/form1.html"><p>Formulario 1</p><small>Registro</small></a></button></div>
-            <div class="col2"><button class="article-button"><a href="./docs/form2.html"><p>Formulario 2</p><small>Reserva viaje</small></a></button></div>
-            <div class="col3"><button class="article-button"><a href="./docs/form3.html"><p>Formulario 3</p><small>Formulario libre</small></a></button></div>
+            <div class="col1"><button class="article-button"><a href="./docs/ej2/form1.html"><p>Formulario 1</p><small>Registro</small></a></button></div>
+            <div class="col2"><button class="article-button"><a href="./docs/ej2/form2.html"><p>Formulario 2</p><small>Reserva viaje</small></a></button></div>
+            <div class="col3"><button class="article-button"><a href="./docs/ej2/form3.html"><p>Formulario 3</p><small>Formulario libre</small></a></button></div>
         </div>
     </div>
-    <div class="proyectos">
-        <h2>Proyecto</h2>
+    <div class="ejphp">
+        <h2>Introducción a PHP</h2>
         <div class="row">
-            <div class="col1"><button class="article-button"><p>Consigna</p><small>dada por el profesor</small></button></div>
-            <div class="col2"><button class="article-button"><p>Proyecto</p><small>Contenido</small></button></div>
-            <div class="col3"><button class="article-button"><p>Detalles</p><small>Acerca de</small></button></div>
+            <div class="col1"><button class="article-button"><p>Ejercicio PHP</p><small>formulario tarjeta</small></button></div>
         </div>
     </div>
 </article>
