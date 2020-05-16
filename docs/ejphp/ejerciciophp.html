@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/forms.css">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>TodoPago</title>
+</head>
+
+
+    <body class="form1">
+        <div class="form-container">
+            
+                <fieldset>
+                   
+    <form class="borde" action="ejerciciophp-results.php" method="POST">
+        <h1>Paga con tarjeta</h1>
+        <hr class="separator">
+        <p><label>Nombre:</label><input placeholder="Su nombre" type="text" size="30" name="p-name" required></p>
+        <p><label>Apellido:</label><input placeholder="Su apellido" type="text" size="30" name="p-surname" required></p>
+        <p><label>Tipo de documento:</label>
+            <select name="p-idtype" required>
+               <option selected>DU
+               <option>Pasaporte
+               <option>LE
+               <option>LC
+               <option>CI
+            </select></p>
+        <p><label>Nro de tajeta de crédito:</label><input placeholder="XXXX-XXXX-XXXX-XXXX" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" type="number" size="20" maxlength="16" name="p-cardnumber" required></p>
+        <p><label>Tarjeta:</label>
+            <select name="p-card" required>
+               <option selected>Visa
+               <option>Master Card
+               <option>American Express
+            </select></p> 
+        <p><label>Entidad emisora:</label>
+            <select name="p-entity" required>
+               <option selected>Bco Nacion
+               <option>Bco Provincia
+               <option>Bco Frances
+               <option>Bco Galicia
+               <option>Bco Ciudad
+               <option>MercadoPago
+            </select></p> 
+        <p><label>Importe:</label><input placeholder="$XXX,XX" type="number" maxlength="8" size="8" name="p-amount" required></p>       
+        <p><input class="form-submit" type="submit" name="enviar" value="Enviar"></p>
+            
+     
+            </form>
+            </fieldset>
+           
+        </div>
+    
+</body>
+</html>
