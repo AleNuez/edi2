@@ -21,6 +21,7 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex: 3;
+    
 }
 .card {
     box-shadow: 0px 4px 4px -3px black;
@@ -31,6 +32,17 @@ main {
     height: 10rem;
     margin: 1rem;
     background-color: whitesmoke;
+    
+}
+.card-text h2,.card-text h3, .card-text p {
+    color: #000;
+}
+
+.card-text {
+    text-align: left;
+    display: table;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #navbar {
     background: linear-gradient(40deg, #5ed8ff, #d2f1fc);
@@ -86,6 +98,7 @@ main {
         flex-direction: column;
         flex: 2;
         display: flex;
+       
     }
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
