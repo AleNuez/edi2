@@ -18,6 +18,7 @@ main {
     color: white;
 }
 #article {
+    text-align: center;
    
     background: linear-gradient(40deg, #fff, #fff);
     padding-top: 1rem;
@@ -49,7 +50,7 @@ main {
 }
 #navbar {
     text-align: center;
-    color: white;
+    color: black;
     background: linear-gradient(40deg, #5ed8ff, #d2f1fc);
 
 }
