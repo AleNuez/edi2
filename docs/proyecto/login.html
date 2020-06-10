@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=devic
     e-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/proyecto-styles.css">
-    <script src="../../scripts/proyecto-script.js"></script>
+    
     <title>Login - ConcursAR</title>
 </head>
 <body>
@@ -13,41 +13,48 @@
         <h2 class="header-brand">ConcursAR<button id="header-menu" class="header-button"></button></h2>
     </header>
     <main>
-    <!-- <nav id="navbar">
-        <h2>Herramientas</h2>
-    </nav> -->
-    <div class="main-without-nav">
-    <article id="article">
-        <div class="hero">
-
-        <div class="white-font">
-        <h1 class="custom-h1">Iniciar sesión o Registarte</h1>
-     
-        <div class="log-row"><div class="col-log"><p class="custom-text text-center">¿Ya tenés cuenta?</p>
-           <button class="p-btn white-font">Iniciar Sesión</button></div>
-            <div class="col-log"><p class="custom-text text-center">¿Nuevo en la plataforma?</p>
-            <button class="p-btn white-font">Registarte</button></div>
-        </div>
-    </div>    
-    </div>
-        <!-- <div class="card-deck">
-        <div class="card">
-            <h2>Soy Docente</h2>
-            <p>Ingrese para consultar y postularse a los cargos vacantes.</p>
-        </div>
-        <div class="card">
-            <h2>Soy Administrador</h2>
-            <p>Controle las postulaciones y gestione los cargos de los establecimientos.       b </p>
-        </div>
-         </div> -->
-    </article>
- 
-    </div>    
+        <div class="main-without-nav">
+        <article id="article">
+            <div class="hero-2">
+                <div class="white-font">
+                    <h1 class="custom-h1">Iniciar sesión o Registarte</h1>
+                    <div class="log-row">
+                        <div class="col-log">
+                            <p class="custom-text text-center">¿Ya tenés cuenta?</p>
+                            <button class="p-btn white-font modal-login">Iniciar Sesión</button>
+                        </div>
+                        <div class="col-log">
+                            <p class="custom-text text-center">¿Nuevo en la plataforma?</p>
+                            <button class="p-btn white-font modal-reg">Registarte</button>
+                        </div>
+                        <div class="modal-bg-login">
+                            <div class="modal-a">
+                                <h3>Iniciar Sesión</h3>
+                                <label for="user">Usuario:</label>
+                                <input type="text" name="user">
+                                <input type="submit">
+                                <span class="modal-close">X</span>
+                            </div>
+                        </div>
+                        <!-- <div class="modal-bg-reg">
+                            <div class="modal-b">
+                                <h3>Registrarse</h3>
+                                <label for="user">Usuario:</label>
+                                <input type="text" name="user">
+                                <input type="submit">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>    
+            </div>
+        </article>
+        </div>    
     </main>
     <footer id="footer">
         <h2><small>Mas información</small></h2>
         <small><p class="copyright">Alejandro Nuñez 2020 <br>
         Lorem ipsum dolor sit amet consectetur, Nulla,  velit ducimus placeat ratione.</p></small>
     </footer>
+    <script src="./../../../edi2/scripts/proyecto-script.js"></script>
 </body>
 </html>
