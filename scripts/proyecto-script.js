@@ -1,4 +1,4 @@
-console.log("ok");
+
 function hideNav() {
     var nav = document.querySelector("#navbar");
     if (nav.style.display == "none") {
@@ -16,3 +16,12 @@ modalClose.addEventListener('click',function(){
     modalBg.classList.remove('bg-active');
 });
 
+var regBtn = document.querySelector('.modal-reg');
+var regBg = document.querySelector('.modal-bg-reg');
+var regClose = document.querySelector('.modal-closeb');
+regBtn.addEventListener('click',function(){
+    regBg.classList.add('bg-active');
+});
+regClose.addEventListener('click',function(){
+    regBg.classList.remove('bg-active');
+});

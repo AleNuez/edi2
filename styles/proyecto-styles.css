@@ -89,9 +89,18 @@ main {
     font-weight: 700;
 
 }
+.login-btn {
+    padding: 1rem 2rem;
+    margin: 1rem;
+    background-color: #58db63;
+    font-size: medium;
+    font-weight: 700;
+    color: white;
+
+}
 .custom-text {
     text-align: center;
-    margin: 2rem 6rem;
+    margin: 0 0 2rem;
     font-size: 20px;
     font-weight: 600;
     text-shadow: 2px 2px black;
@@ -103,6 +112,7 @@ main {
 }
 .col-log {
     flex: 2;
+    margin: 0 0 5rem;
 }
 #aside {
     color: white;
@@ -155,21 +165,41 @@ main {
     opacity: 1;
 }
 .modal-close {
-    position: relative;
-    top: 10px;
-    right: 10px;
+    position: fixed;
+    top: 149px;
+    right: 236px;
     font-weight: bold;
     cursor: pointer;
 }
+.modal-closeb {
+    position: fixed;
+    top: 36px;
+    right: 130px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .modal-a {
+    color: black;
     background-color: #d3f4ff;
-    width: 40%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
+.modal-b {
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media (min-width: 600px )  {
   
     body {
