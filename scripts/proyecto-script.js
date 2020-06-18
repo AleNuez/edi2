@@ -1,10 +1,10 @@
 
-function hideNav() {
-    var nav = document.querySelector("#navbar");
-    if (nav.style.display == "none") {
-        nav.style.display = "block";
-    } else nav.style.display = "none";
-}
+// function hideNav() {
+//     var nav = document.querySelector("#navbar");
+//     if (nav.style.display == "none") {
+//         nav.style.display = "block";
+//     } else nav.style.display = "none";
+// }
 
 var modalBtn = document.querySelector('.modal-login');
 var modalBg = document.querySelector('.modal-bg-login');
