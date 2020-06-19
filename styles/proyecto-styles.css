@@ -2,6 +2,10 @@
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.escudo-header {
+    width: 60px;
+    height: 45px;
+}
 .white-font {
     color: white;
 }
@@ -25,6 +29,8 @@ main {
     flex: 1;
 }
 #header {
+    display: flex;
+    align-items: center;
     background: linear-gradient(40deg, #63b9ff, #add7fa);
     color: white;
 }
@@ -105,6 +111,9 @@ main {
     font-weight: 600;
     text-shadow: 2px 2px black;
 }
+.welcome-text {
+    background-color: rgba(220, 241, 241, 0.425);
+}
 .log-row {
     display: flex;
     flex-direction: row;
@@ -129,6 +138,14 @@ main {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.left {
+    text-align: left;
+    margin: 0 0 1rem 2rem;
+}
+.hr {
+    width: 30px;
+    border: 5px white;
+}
 .header-brand {
     text-align: left;
     margin-left: 5px;   
@@ -141,9 +158,10 @@ main {
     margin: -8px 8px;
     box-shadow: 0px 4px 4px -3px black;  
 } */
-.copyright {
+.copyright a {
     text-align: center;
-    font-size: smaller;
+    color: white;
+    
 }
 
 .modal-bg-login, .modal-bg-reg {
@@ -231,6 +249,7 @@ main {
         flex: 1;
     }
     #header {
+   
         background: linear-gradient(40deg, #63b9ff, #add7fa);
         padding: 1rem;
     }
