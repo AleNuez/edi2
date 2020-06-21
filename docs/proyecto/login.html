@@ -28,18 +28,21 @@
                             <button class="p-btn white-font modal-reg">Registarte</button>
                         </div>
                         <div class="modal-bg-login">
-                            <div class="modal-a">
+                            <form class="modal-a" action="./home.html">
+                                
+                                <span class="modal-close-login">X</span>
+                                
                                 <h3>Iniciar Sesión</h3>
                                 <label for="login-user">Usuario:</label>
                                 <input type="text" name="login-user">
                                 <label for="login-pass">Contraseña:</label>
                                 <input type="password" name="login-pass" id="">
-                                <input type="submit" class="login-btn" value="Entrar">
-                                <span class="modal-close">X</span>
-                            </div>
+                                <input type="submit" class="login-btn" value="Entrar">  
+                            
+                            </form>
                         </div>
                         <div class="modal-bg-reg">
-                            <div class="modal-b">
+                            <form action="./home.html" class="modal-b">
                                 <div class="reg-camp"><h3>Registrarse</h3> </div>
                                 <div class="reg-camp"><label for="login-user">DNI:</label>
                                 <input type="number" name="reg-user"></div>
@@ -75,8 +78,8 @@
                                 <label for="reg-pass-repeat">Repita Contraseña:</label>
                                 <input type="password" name="reg-pass-repeat"></div>
                                 <input type="submit" class="login-btn" value="Registrarse">
-                                <span class="modal-closeb">X</span>
-                            </div>
+                                <span class="modal-close-reg">X</span>
+                            </form>
                         </div>
                     </div>
                 </div>    

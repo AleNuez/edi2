@@ -182,22 +182,23 @@ main {
     visibility: visible;
     opacity: 1;
 }
-.modal-close {
-    position: fixed;
-    top: 149px;
-    right: 236px;
+.modal-close-login {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
     font-weight: bold;
     cursor: pointer;
 }
-.modal-closeb {
-    position: fixed;
-    top: 36px;
-    right: 130px;
+.modal-close-reg {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
     font-weight: bold;
     cursor: pointer;
 }
 
 .modal-a {
+    position: relative;
     color: black;
     background-color: #d3f4ff;
     width: 50%;
@@ -208,6 +209,7 @@ main {
     flex-direction: column;
 }
 .modal-b {
+    position: relative;
     color: black;
     background-color: #d3f4ff;
     width: 75%;

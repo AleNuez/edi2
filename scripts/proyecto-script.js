@@ -8,7 +8,7 @@
 
 var modalBtn = document.querySelector('.modal-login');
 var modalBg = document.querySelector('.modal-bg-login');
-var modalClose = document.querySelector('.modal-close');
+var modalClose = document.querySelector('.modal-close-login');
 modalBtn.addEventListener('click',function(){
     modalBg.classList.add('bg-active');
 });
@@ -18,7 +18,7 @@ modalClose.addEventListener('click',function(){
 
 var regBtn = document.querySelector('.modal-reg');
 var regBg = document.querySelector('.modal-bg-reg');
-var regClose = document.querySelector('.modal-closeb');
+var regClose = document.querySelector('.modal-close-reg');
 regBtn.addEventListener('click',function(){
     regBg.classList.add('bg-active');
 });
