@@ -6,6 +6,58 @@
     width: 60px;
     height: 45px;
 }
+.header-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.profile-photo {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.user-header {
+   
+    border-radius: 25px;
+    width: 45px;
+    height: 45px;
+}
+.user-profile {
+    align-self: center;
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+}
+.user-part {
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 3rem;
+}
+.header-escudo {
+    align-items: center;
+    display: flex;
+    position: inherit;
+   
+}
+.home-opt {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.prof-btn {
+    width: 234px;
+    position: relative;
+    padding: 1rem 0rem 1rem 1rem;
+    background-color: #1386a8;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+    align-self: center;
+    bottom: 40px;
+}
 .white-font {
     color: white;
 }
@@ -72,15 +124,44 @@ main {
 
 }
 .hero-1 {
-    background-image: url(../img/003.jpg);
+    /* Nene mirando para arriba */
+    background-image: url(../img/009.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    height: 100%;
+    width: 100%;
+}
+.hero-2 {
+    /* Jovenes estudiando */
+    background-image: url(../img/002.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
     height: 100%;
     width: 100%;
 }
-.hero-2 {
-    background-image: url(../img/002.jpg);
+.hero-3 {
+    /* Aula con alumnos */
+    background-image: url(../img/001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 27%;
+    height: 100%;
+    width: 100%;
+}
+.hero-4 {
+    /* Adolescentes en examen */
+    background-image: url(../img/007.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 27%;
+    height: 100%;
+    width: 100%;
+}
+.hero-5 {
+    /* Niños con banderas */
+    background-image: url(../img/008.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
@@ -93,7 +174,15 @@ main {
     background-color: #58db63;
     font-size: 3vh;
     font-weight: 700;
-
+}
+.opt-btn {
+    display: flex;
+    padding: 1rem 3rem;
+    background-color: #1386a8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
 }
 .login-btn {
     padding: 1rem 2rem;
@@ -112,7 +201,7 @@ main {
     text-shadow: 2px 2px black;
 }
 .welcome-text {
-    background-color: rgba(220, 241, 241, 0.425);
+    background-color: rgba(60, 132, 214, 0.822);
 }
 .log-row {
     display: flex;
@@ -147,6 +236,7 @@ main {
     border: 5px white;
 }
 .header-brand {
+    font-size: 20px;
     text-align: left;
     margin-left: 5px;   
 }
@@ -158,7 +248,7 @@ main {
     margin: -8px 8px;
     box-shadow: 0px 4px 4px -3px black;  
 } */
-.copyright a {
+.copyright, a {
     text-align: center;
     color: white;
     
