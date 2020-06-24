@@ -1,12 +1,5 @@
 
-// function hideNav() {
-//     var nav = document.querySelector("#navbar");
-//     if (nav.style.display == "none") {
-//         nav.style.display = "block";
-//     } else nav.style.display = "none";
-// }
-
-var modalBtn = document.querySelector('.modal-login');
+var modalBtn = document.querySelector('.modal-login'); // LOGIN
 var modalBg = document.querySelector('.modal-bg-login');
 var modalClose = document.querySelector('.modal-close-login');
 modalBtn.addEventListener('click',function(){
@@ -16,7 +9,7 @@ modalClose.addEventListener('click',function(){
     modalBg.classList.remove('bg-active');
 });
 
-var regBtn = document.querySelector('.modal-reg');
+var regBtn = document.querySelector('.modal-reg'); // REGISTRO
 var regBg = document.querySelector('.modal-bg-reg');
 var regClose = document.querySelector('.modal-close-reg');
 regBtn.addEventListener('click',function(){

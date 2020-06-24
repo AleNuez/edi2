@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devic
+    e-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../styles/proyecto-styles.css">
+
+        <title>Actos Públicos | ConcursAR</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="header-escudo">
+                <a href="./home-doc.html" class="header-link"><img src="../../img/escudo.png" class="escudo-header">
+                    <h2 class="header-brand">
+                        ConcursAR</h2>
+                </a>
+            </div>
+            <div class="user-part">
+                <a href="./profile-doc.html" class="header-link"><img src="../../img/default-user.jpg" class="user-header">
+                    <p class="header-brand">Usuario</p>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-without-nav">
+                <article id="article">
+                    <div class="hero-3">
+
+                        <div class="white-font">
+                            <h1 class="left-h1">Actos Públicos</h1>
+
+                            <div class="modal-bg-ap-search">
+                                <form class="modal-form-ap-search" method="POST" action="./home.html">
+
+                                    <span class="modal-close-ap-search">X</span>
+
+                                    <h3>Filtrar ofertas por...</h3>
+                                    <div class="reg-camp">
+                                        <label for="s-cargo">Cargo:</label>
+                                        <select name="s-cargo" id="s-cargo">
+                                            <option value="">
+                                                - Seleccione</option>
+                                            <option value="PR">PR - Preceptor</option>
+                                            <option value="PRF">PRF - Profesor</option>
+                                            <option value="M">M - Maestro</option>
+                                        </select>
+                                    </div>
+                                    <div class="reg-camp">
+                                        <label for="s-distrito">Distrito:</label>
+                                        <select name="s-distrito" id="s-distrito">
+                                            <option value="">
+                                                - Seleccione</option>
+                                            <option value="PR">Merlo</option>
+                                            <option value="PRF">Ituzaingó</option>
+                                            <option value="M">Hurlingham</option>
+                                        </select>
+                                    </div>
+                                    <div class="reg-camp">
+                                        <label for="s-region">Región:</label>
+                                        <select name="s-region" id="s-region">
+                                            <option value="">
+                                                - Seleccione</option>
+                                            <option value="PR">8</option>
+                                            <option value="PRF">7</option>
+                                            <option value="M">2</option>
+                                        </select>
+                                    </div>
+                                    <input type="submit" class="login-btn" value="Buscar">
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabla">
+
+                        <h2 >
+                            Busquedas Vigentes
+                        </h2>
+                        <button class="search-btn white-font modal-ap-search">Buscar</button>
+
+                        <table class="customTable">
+                            <thead>
+                                <tr>
+                                    <th>Cargo</th>
+                                    <th>Escuela</th>
+                                    <th>Desde</th>
+                                    <th>Hasta</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PR</td>
+                                    <td>EES N°55</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PROF</td>
+                                    <td>EEP N°19</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PROF</td>
+                                    <td>EEE N°500</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>EES N°58</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PROF</td>
+                                    <td>EES N°45</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>EES N°5</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PROF</td>
+                                    <td>EMA N°704</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PR</td>
+                                    <td>ET N°1</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>ET N°2</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>PROF</td>
+                                    <td>EES N°5</td>
+                                    <td>23/09/20</td>
+                                    <td>23/09/20</td>
+                                    <td>
+                                        <button class="more-btn">Ver más</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </article>
+
+            </div>
+        </main>
+
+        <footer id="footer">
+
+            <p class="copyright">
+                <h2>
+                    <small>Mas información</small>
+                </h2>
+                <a href="https://www.argentina.gob.ar/educacion">Ministerio de educación de la Nación</a>
+                |
+                <a href="https://www.argentina.gob.ar">Portal de la Nación Argentina</a>
+                |
+                <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
+            </p>
+        </footer>
+        <script src="../../scripts/acto.js"></script>
+    </body>
+</html>
