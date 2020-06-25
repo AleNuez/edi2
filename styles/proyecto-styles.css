@@ -354,7 +354,7 @@ main {
     
 }
                                                                 /* MODAL */
-.modal-bg-login, .modal-bg-reg, .modal-bg-ap-search, .modal-bg-postula, .profile-pic-modal, .profile-view-modal, .profile-edit-modal {      /* DIV ESTRUCTURA  */   
+.modal-bg-login, .modal-bg-reg, .modal-bg-ap-search, .modal-bg-postula, .profile-pic-modal, .profile-view-modal, .profile-edit-modal, .sec-upload-modal, .sad-upap-modal, .sad-upesc-modal {      /* DIV ESTRUCTURA  */   
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -421,6 +421,30 @@ main {
     right: 2rem;
     font-weight: bold;
     cursor: pointer;
+}
+.sec-upload-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sad-upap-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sad-upesc-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.smaller {
+    font-size: xx-large;
 }
                                                      /* Estilo Modal */   
 .modal-a {
@@ -490,6 +514,39 @@ main {
     flex-direction: column;
 }
 .profile-edit-modal-style {
+    position: relative;
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.sec-upload-modal-style {
+    position: relative;
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.sad-upap-modal-style {
+    position: relative;
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.sad-upesc-modal-style {
     position: relative;
     color: black;
     background-color: #d3f4ff;
