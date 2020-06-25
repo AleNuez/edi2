@@ -53,7 +53,7 @@
     justify-content: space-around;
 }
 .prof-btn {
-    width: 234px;
+    width: 251px;
     position: relative;
     padding: 1rem 0rem 1rem 1rem;
     background-color: #1386a8;
@@ -180,6 +180,15 @@ main {
     height: 100%;
     width: 100%;
 }
+.hero-6 {
+    /* aula a traves de la ventana */
+    background-image: url(../img/008.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 27%;
+    height: 100%;
+    width: 100%;
+}
 
 .p-btn {
     padding: 1rem 3rem;
@@ -189,6 +198,17 @@ main {
 }
 .cancel-btn {
     
+    background-color: #df4f4a;
+    display: flex;
+    padding: 1rem 3rem;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+  
+}
+.cancel-profile-btn {
+    width: 200px;
     background-color: #df4f4a;
     display: flex;
     padding: 1rem 3rem;
@@ -228,6 +248,26 @@ main {
     display: flex;
     padding: 1rem 3rem;
     background-color: #1386a8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+}
+.opt-profile-btn {
+    width: 297px;
+    display: flex;
+    padding: 1rem 3rem;
+    background-color: #1386a8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+}
+.close-btn {
+    color: white;
+    display: flex;
+    padding: 1rem 3rem;
+    background-color: #d4554c;
     font-size: 20px;
     text-decoration: none;
     font-weight: 700;
@@ -314,7 +354,7 @@ main {
     
 }
                                                                 /* MODAL */
-.modal-bg-login, .modal-bg-reg, .modal-bg-ap-search, .modal-bg-postula {      /* DIV ESTRUCTURA  */   
+.modal-bg-login, .modal-bg-reg, .modal-bg-ap-search, .modal-bg-postula, .profile-pic-modal, .profile-view-modal, .profile-edit-modal {      /* DIV ESTRUCTURA  */   
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -361,6 +401,27 @@ main {
     font-weight: bold;
     cursor: pointer;
 }
+.profile-pic-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.profile-view-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.profile-edit-close {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
                                                      /* Estilo Modal */   
 .modal-a {
     position: relative;
@@ -396,6 +457,39 @@ main {
     flex-direction: column;
 }
 .modal-form-postula {
+    position: relative;
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-pic-modal-style {
+    position: relative;
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-view-modal-style {
+    position: relative;
+    color: black;
+    background-color: #d3f4ff;
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-edit-modal-style {
     position: relative;
     color: black;
     background-color: #d3f4ff;

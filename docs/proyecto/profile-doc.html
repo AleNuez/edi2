@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=devic
     e-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/proyecto-styles.css">
-    <script src="../../scripts/proyecto-script.js"></script>
-    <title>Home | ConcursAR</title>
+    
+    <title>Mi Perfil | ConcursAR</title>
 </head>
 <body>
     <header id="header">
@@ -14,9 +14,7 @@
     <div class="user-part"><a href="./profile-doc.html" class="header-link"><img src="../../img/default-user.jpg" class="user-header"><p class="header-brand">Usuario</p></a></div>
     </header>
     <main>
-    <!-- <nav id="navbar">
-        <h2>Herramientas</h2>
-    </nav> -->
+    
     <div class="main-without-nav">
     <article id="article">
         <div class="hero-4 ">
@@ -25,14 +23,15 @@
         <div class="col-1">
             <h1 class="custom-h1">Perfil Docente</h1>
             <div class="profile-photo"><img src="../../img/default-user.jpg" class="user-profile">
-            <a href="./login.html" class="prof-btn white-font">Cambiar foto de perfil</a></div>
+            <button  id="profile-pic-btn" class="prof-btn white-font">Cambiar foto de perfil</button>
+        </div>
         </div>
         <div class="col-2">
             <h2 class="custom-text welcome-text"> ¿Que desea hacer?  </h2>
             <ul class="prof-opt">
-                <li><a href="./login.html" class="opt-btn white-font">Ver mi información</a></li>
-                <li> <a href="./login.html" class="opt-btn white-font">Actualizar mis datos</a></li>
-                <li>  <a href="./proyecto.html" class="cancel-btn white-font">Cerrar Sesión</a> </li>
+                <li><button id="profile-view-btn" class="opt-profile-btn white-font">Ver mi información</button></li>
+                <li> <button id="profile-edit-btn" class="opt-profile-btn white-font">Actualizar mis datos</button></li>
+                <li>  <a  href="proyecto.html" class="cancel-profile-btn white-font">Cerrar Sesión</a> </li>
             </ul>
         </div>
         
@@ -40,7 +39,86 @@
     </div>
       
     </article>
- 
+
+    <div class="tabla">
+        <div class="profile-pic-modal">
+            <form class="profile-pic-modal-style" method="POST" action="./profile-doc.html">
+
+                <span class="profile-pic-close">X</span>
+                <div class="flex-parent">
+                  
+                    <h4>Subir foto</h4>
+
+                </div>
+                <button class="close-btn">Cerrar</button>
+            </form>
+        </div> 
+        <!-- termina modal profile  -->
+
+        <div class="profile-view-modal">
+            <form class="profile-view-modal-style" method="POST" action="./profile-doc.html">
+
+                <span class="profile-view-close">X</span>
+                <div class="flex-parent">
+                    <div class="col-1">
+                        <div class="profile-photo"><img src="../../img/default-user.jpg" class="user-profile">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <h3>Mi perfil</h3>
+                        <div class="muestra">
+                            <span>Nombre:</span><span> 132</span><br>
+                            <span> Apellido </span><span>Titularización</span><br>
+                            <span> Cargo </span><span>PR</span> <br>
+                            <span> DNI</span><span>10/04/2020</span><br> 
+                            <span> Hasta </span><span>09/11/2020</span> <br>
+                            <span> Escuela </span><span>EES N°45</span> <br>
+                            <span> Turno </span><span>Mañana</span> <br>
+                            <span> Dias </span><span>-</span><br>
+                            <span> Curso </span><span>4to C</span><br> 
+                            <span> Hs </span><span>-</span> <br>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <button class="close-btn">Cerrar</button>
+            </form>
+        </div> 
+        <!-- termina modal profile  -->
+        <div class="profile-edit-modal">
+            <form class="profile-edit-modal-style" method="POST" action="./profile-doc.html">
+
+                <span class="profile-edit-close">X</span>
+                <div class="flex-parent">
+                    <div class="col-1">
+                        <div class="profile-photo"><img src="../../img/default-user.jpg" class="user-profile">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <h3>Mi perfil</h3>
+                        <div class="muestra">
+                            <span>Nombre:</span><span> 132</span><br>
+                            <span> Apellido </span><span>Titularización</span><br>
+                            <span> Cargo </span><span>PR</span> <br>
+                            <span> DNI</span><span>10/04/2020</span><br> 
+                            <span> Hasta </span><span>09/11/2020</span> <br>
+                            <span> Escuela </span><span>EES N°45</span> <br>
+                            <span> Turno </span><span>Mañana</span> <br>
+                            <span> Dias </span><span>-</span><br>
+                            <span> Curso </span><span>4to C</span><br> 
+                            <span> Hs </span><span>-</span> <br>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                <button class="close-btn">Cerrar</button>
+            </form>
+        </div> 
+        <!-- termina modal profile  -->
     </div>    
     </main>
     <footer id="footer">
@@ -48,5 +126,6 @@
         <p class="copyright"><h2><small>Mas información</small></h2>  <a href="https://www.argentina.gob.ar/educacion">Ministerio de educación de la Nación</a> |
         <a href="https://www.argentina.gob.ar">Portal de la Nación Argentina</a> | <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a></p>
     </footer>
+    <script src="../../scripts/profile-script.js"></script>
 </body>
 </html>
