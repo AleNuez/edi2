@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/edi2/styles/proyecto-styles.css">
+        <link rel="stylesheet" href="../../styles/proyecto-styles.css">
 
         <title>Mi Perfil | ConcursAR</title>
     </head>
     <body>
-
         <?php
 include("conexion.php");
 session_start();
@@ -18,16 +17,15 @@ $convertedName = ucfirst($name);
 $surname = $_SESSION['surname'];
 $convertedSurname = ucfirst($surname);
 ?>
-
         <header id="header">
             <div class="header-escudo">
-                <a href="./home-doc.php" class="header-link"><img src="../../img/escudo.png" class="escudo-header">
+                <a href="./home-sec.html" class="header-link"><img src="../../img/escudo.png" class="escudo-header">
                     <h2 class="header-brand">
                         ConcursAR</h2>
                 </a>
             </div>
             <div class="user-part">
-                <a href="./profile-doc.php" class="header-link">
+                <a href="./profile-sec.html" class="header-link">
                     <?php
                 $buscarImgs = "SELECT image FROM users WHERE user='$usuario' ";
                 $isthereImgs = $conexion->query($buscarImgs);
@@ -53,11 +51,11 @@ $convertedSurname = ucfirst($surname);
 
             <div class="main-without-nav">
                 <article id="article">
-                    <div class="hero-4 ">
+                    <div class="hero-5 ">
 
                         <div class="white-font flex-parent">
                             <div class="col-1">
-                                <h1 class="custom-h1">Perfil Docente</h1>
+                                <h1 class="custom-h1">Perfil Secretario</h1>
                                 <div class="profile-photo">
                                     <?php
                 $buscarImgs = "SELECT image FROM users WHERE user='$usuario' ";
@@ -99,7 +97,6 @@ $convertedSurname = ucfirst($surname);
                     </div>
 
                 </article>
-
                 <div class="tabla">
                     <div class="profile-pic-modal">
                         <form
@@ -133,20 +130,16 @@ $convertedSurname = ucfirst($surname);
                         </form>
                     </div>
                     <!-- termina modal profile -->
-
                     <div class="profile-view-modal">
                         <form
                             class="profile-view-modal-style"
                             method="POST"
-                            action="./profile-doc.html">
+                            action="./profile-sec.html">
 
                             <span class="profile-view-close">X</span>
                             <div class="flex-parent">
                                 <div class="col-1">
-                                    <div class="profile-photo">
-
-                                        <img src="../../img/default-user.jpg" class="user-profile">
-
+                                    <div class="profile-photo"><img src="../../img/default-user.jpg" class="user-profile">
                                     </div>
                                 </div>
                                 <div class="col-2">
@@ -198,7 +191,7 @@ $convertedSurname = ucfirst($surname);
                         <form
                             class="profile-edit-modal-style"
                             method="POST"
-                            action="./profile-doc.html">
+                            action="./profile-sec.html">
 
                             <span class="profile-edit-close">X</span>
                             <div class="flex-parent">

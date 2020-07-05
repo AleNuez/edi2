@@ -18,7 +18,7 @@
     flex-direction: column;
 }
 .user-header {
-   
+
     border-radius: 25px;
     width: 45px;
     height: 45px;
@@ -35,7 +35,7 @@
 }
 .file-loader {
     display: flex;
-    margin: 2rem 2rem 1rem 0rem;
+    margin: 2rem 2rem 1rem 0;
 }
 .botonera {
     align-content: space-between;
@@ -51,7 +51,7 @@
     align-items: center;
     display: flex;
     position: inherit;
-   
+
 }
 .home-opt {
     display: flex;
@@ -67,7 +67,7 @@
 .prof-btn {
     width: 251px;
     position: relative;
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 0 1rem 1rem;
     background-color: #1386a8;
     font-size: 16px;
     text-decoration: none;
@@ -96,10 +96,10 @@
 body {
     height: 98vh;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
 }
 main {
-    
+
     flex-direction: column;
     display: flex;
     flex: 1;
@@ -112,17 +112,17 @@ main {
 }
 #article {
     text-align: center;
-   
+
     background: linear-gradient(40deg, #fff, #fff);
     padding-top: 1rem;
     padding-bottom: 1rem;
     flex: 3;
-    
+
 }
 .card {
     text-align: center;
     padding-top: 1rem;
-    box-shadow: 0px 4px 4px -3px black;
+    box-shadow: 0 4px 4px -3px black;
     flex-direction: row;
     flex: 1;
     border-radius: 10px;
@@ -130,12 +130,14 @@ main {
     margin: 1rem;
     background-color: whitesmoke;
 }
-.card-text h2,.card-text h3, .card-text p {
+.card-text h2,
+.card-text h3,
+.card-text p {
     color: #000;
 }
 
 .card-text {
-  
+
     text-align: left;
     display: table;
     padding-left: 1rem;
@@ -149,7 +151,7 @@ main {
 }
 .hero-1 {
     /* Nene mirando para arriba */
-    background-image: url(../img/009.jpg); 
+    background-image: url("../img/009.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 70%;
@@ -158,7 +160,7 @@ main {
 }
 .hero-2 {
     /* Jovenes estudiando */
-    background-image: url(../img/002.jpg);
+    background-image: url("../img/002.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
@@ -167,7 +169,7 @@ main {
 }
 .hero-3 {
     /* Aula con alumnos */
-    background-image: url(../img/001.jpg);
+    background-image: url("../img/001.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
@@ -176,7 +178,7 @@ main {
 }
 .hero-4 {
     /* Adolescentes en examen */
-    background-image: url(../img/007.jpg);
+    background-image: url("../img/007.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
@@ -185,7 +187,7 @@ main {
 }
 .hero-5 {
     /* Niños con banderas */
-    background-image: url(../img/008.jpg);
+    background-image: url("../img/008.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
@@ -194,7 +196,7 @@ main {
 }
 .hero-6 {
     /* aula a traves de la ventana */
-    background-image: url(../img/008.jpg);
+    background-image: url("../img/008.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 27%;
@@ -209,7 +211,7 @@ main {
     font-weight: 700;
 }
 .cancel-btn {
-    
+
     background-color: #df4f4a;
     display: flex;
     padding: 1rem 3rem;
@@ -217,7 +219,7 @@ main {
     text-decoration: none;
     font-weight: 700;
     margin: 5px;
-  
+
 }
 .cancel-profile-btn {
     width: 200px;
@@ -228,7 +230,7 @@ main {
     text-decoration: none;
     font-weight: 700;
     margin: 5px;
-  
+
 }
 .flex-parent {
     display: flex;
@@ -237,10 +239,10 @@ main {
 .col-1 {
     flex: 1;
     padding: 1rem 2rem;
-} 
+}
 .col-2 {
     flex: 1;
-    padding: 10rem 0rem 1rem 0rem;
+    padding: 10rem 0 1rem;
 }
 .more-btn {
     padding: 0.5rem 2.5rem;
@@ -333,8 +335,8 @@ main {
     text-align: left;
     margin: 0 0 1rem 2rem;
 }
-.muestra{
-   justify-content: center;
+.muestra {
+    justify-content: center;
 }
 /* .no-deco {
     display: flex;
@@ -351,7 +353,7 @@ main {
 .header-brand {
     font-size: 20px;
     text-align: left;
-    margin-left: 5px;   
+    margin-left: 5px;
 }
 /* .header-button {
     float: right;
@@ -361,31 +363,43 @@ main {
     margin: -8px 8px;
     box-shadow: 0px 4px 4px -3px black;  
 } */
-.copyright, a {
+.copyright,
+a {
     text-align: center;
     color: white;
-    
+
 }
-                                                                /* MODAL */
-.modal-bg-login, .modal-bg-reg, .modal-bg-ap-search, .modal-bg-postula, .profile-pic-modal, .profile-view-modal, .profile-edit-modal, .sec-upload-modal, .sad-upap-modal, .sad-upesc-modal {      /* DIV ESTRUCTURA  */   
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0; 
-  
+/* MODAL */
+.modal-bg-ap-search,
+.modal-bg-login,
+.modal-bg-postula,
+.modal-bg-reg,
+.profile-edit-modal,
+.profile-pic-modal,
+.profile-view-modal,
+.sad-upap-modal,
+.sad-upesc-modal,
+.sec-upload-modal {
+    /* DIV ESTRUCTURA  */
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+
 }
-.bg-active {                                                 /* OCULTA, UNIVERSAL  */   
+.bg-active {
+    /* OCULTA, UNIVERSAL  */
     visibility: visible;
     opacity: 1;
 }
-                                                 /* Boton cierre  */   
+/* Boton cierre  */
 .modal-close-login {
     position: absolute;
     top: 1rem;
@@ -459,7 +473,7 @@ main {
 .smaller {
     font-size: xx-large;
 }
-                                                     /* Estilo Modal */   
+/* Estilo Modal */
 .modal-a {
     position: relative;
     color: black;
@@ -571,8 +585,7 @@ main {
     flex-direction: column;
 }
 
-
-                             /* Tabla  */   
+/* Tabla  */
 table.customTable {
     margin-top: 1rem;
     width: 100%;
@@ -582,22 +595,22 @@ table.customTable {
     border-color: #7EA8F8;
     border-style: solid;
     color: #000000;
-  }
-  
+}
 
-  table.customTable td, table.customTable th {
+table.customTable td,
+table.customTable th {
     border-width: 2px;
     border-color: #7EA8F8;
     border-style: solid;
     padding: 5px;
-  }
-  
-  table.customTable thead {
-    background-color: #7EA8F8;
-  }
+}
 
-@media (min-width: 600px )  {
-  
+table.customTable thead {
+    background-color: #7EA8F8;
+}
+
+@media (min-width: 600px) {
+
     body {
         flex-direction: column;
     }
@@ -606,19 +619,19 @@ table.customTable {
         flex: 1;
     }
     #navbar {
-       
+
         flex: 0;
         padding-top: 4rem;
         padding-bottom: 4rem;
         flex: 1 5rem;
     }
     #article {
-        background-color:#3BEBFF ;
+        background-color: #3BEBFF;
         background: linear-gradient(40deg,#3BEBFF, rgb(148, 241, 252));
         flex-direction: column;
         flex: 2;
         display: flex;
-       
+
     }
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
@@ -627,7 +640,7 @@ table.customTable {
         flex: 1;
     }
     #header {
-   
+
         background: linear-gradient(40deg, #63b9ff, #add7fa);
         padding: 1rem;
     }
@@ -644,25 +657,25 @@ table.customTable {
         flex-direction: row;
         flex: 1;
     }
-    .main-without-nav{
+    .main-without-nav {
         flex: 3;
     }
     #navbar {
         background: linear-gradient(40deg, #5ed8ff, #d2f1fc);
         flex: 1;
-        
+
     }
     #article {
         background: linear-gradient(40deg, #fff, #fff);
-    
+
     }
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
-        
+
     }
     #header {
         background: linear-gradient(40deg, #63b9ff, #add7fa);
-        
+
     }
     #footer {
         background: linear-gradient(40deg, #4ab1e8, #99cce7);
@@ -671,4 +684,3 @@ table.customTable {
         display: none;
     }
 }
-
