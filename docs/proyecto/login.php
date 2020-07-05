@@ -9,6 +9,10 @@
     <title>Login - ConcursAR</title>
 </head>
 <body>
+    <?php
+     session_start();
+     $error = $_SESSION['error'];
+    ?>
     <header id="header">
         <img src="../../img/escudo.png" class="escudo-header"> <h2 class="header-brand"> ConcursAR</h2>
         </header>
@@ -27,16 +31,36 @@
                             <p class="custom-text text-center">¿Nuevo en la plataforma?</p>
                             <button class="p-btn white-font modal-reg">Registarte</button>
                         </div>
+
+                        <?php
+                            if($error){
+                        ?>
+                        <!-- <div style="visibility:visible;opacity:1;" class="modal-bg-login"> -->
+                        <div class="modal-bg-login bg-active">
+                        <?php
+                            } else{
+                        ?>
                         <div class="modal-bg-login">
-                            <form class="modal-a" method="POST" action="./home-doc.html">
+                        <?php
+                            }
+                        ?>
+                        
+                            <form class="modal-a" method="POST" action="loguear.php">
                                 
                                 <span class="modal-close-login">X</span>
                                 
                                 <h3>Iniciar Sesión</h3>
-                                <label for="login-user">Usuario:</label>
-                                <input type="text" name="login-user">
-                                <label for="login-pass">Contraseña:</label>
-                                <input type="password" name="login-pass" id="">
+                                <label for="user">Usuario:</label>
+                                <input type="text" name="user" REQUIRED>
+                                <label for="pass">Contraseña:</label>
+                                <input type="password" name="pass" id="" REQUIRED>
+                                <?php
+                                if($error){
+                                ?>
+                                <p style="color:red;"><small>* Datos incorrectos, intente nuevamente</small></p>
+                                <?php
+                                }
+                                ?>
                                 <input type="submit" class="login-btn" value="Entrar">  
                             
                             </form>

@@ -29,6 +29,18 @@
     width: 250px;
     height: 250px;
 }
+.flex-form {
+    display: flex;
+    justify-content: space-between;
+}
+.file-loader {
+    display: flex;
+    margin: 2rem 2rem 1rem 0rem;
+}
+.botonera {
+    align-content: space-between;
+    display: flex;
+}
 .user-part {
     align-items: center;
     display: flex;
@@ -273,6 +285,7 @@ main {
     font-weight: 700;
     margin: 5px;
 }
+
 .login-btn {
     padding: 1rem 2rem;
     margin: 1rem;
