@@ -1,3 +1,7 @@
+<?php
+     session_start();
+     $error = $_SESSION['error'];
+    ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,10 +12,7 @@
         <title>Login - ConcursAR</title>
     </head>
     <body>
-        <?php
-     session_start();
-     $error = $_SESSION['error'];
-    ?>
+        
         <header id="header">
             <img src="../../img/escudo.png" class="escudo-header">
             <h2 class="header-brand">
@@ -135,6 +136,6 @@
                     <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
                 </p>
             </footer>
-            <script src="./../../../edi2/scripts/proyecto-script.js"></script>
+            <script src="/scripts/proyecto-script.js"></script>
         </body>
     </html>

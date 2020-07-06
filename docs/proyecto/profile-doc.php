@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/edi2/styles/proyecto-styles.css">
-
-        <title>Mi Perfil | ConcursAR</title>
-    </head>
-    <body>
-
-        <?php
+<?php
 include("conexion.php");
 session_start();
 $usuario = $_SESSION['username'];
@@ -18,6 +7,18 @@ $convertedName = ucfirst($name);
 $surname = $_SESSION['surname'];
 $convertedSurname = ucfirst($surname);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/styles/proyecto-styles.css">
+
+        <title>Mi Perfil | ConcursAR</title>
+    </head>
+    <body>
+
+
 
         <header id="header">
             <div class="header-escudo">
@@ -266,6 +267,6 @@ $convertedSurname = ucfirst($surname);
                     <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
                 </p>
             </footer>
-            <script src="../../scripts/profile-script.js"></script>
+            <script src="/scripts/profile-script.js"></script>
         </body>
     </html>

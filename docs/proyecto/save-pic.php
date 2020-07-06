@@ -3,7 +3,10 @@
 include('conexion.php');
 session_start();
 $user = $_SESSION['username'];
-$Img = addslashes(file_get_contents($_FILES['Imagen']['tmp_name'])); //tmp_name: nombre del arhivo en el SO
+$imgSubida = $_FILES['Imagen']['tmp_name'];
+
+
+$Img = addslashes(file_get_contents($imgSubida)); //tmp_name: nombre del arhivo en el SO
 
 $saveImg = "UPDATE users SET image='$Img' WHERE user = '$user'";
 
