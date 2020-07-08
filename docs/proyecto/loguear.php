@@ -22,7 +22,13 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $rol = $datosObtenidos['rol'];
     $_SESSION['error'] = !$error; // guardo en la sesion que error es false, o sea , todo bien.
     switch($rol){
-        case "docente":
+        case "profesor":
+            header("location: home-doc.php"); // redirecciono al home.
+        break;
+        case "maestro":
+            header("location: home-doc.php"); // redirecciono al home.
+        break;
+        case "preceptor":
             header("location: home-doc.php"); // redirecciono al home.
         break;
         case "secretario":

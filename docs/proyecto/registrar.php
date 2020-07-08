@@ -1,0 +1,25 @@
+<?php
+
+require("conexion.php");
+session_start();
+
+// user-password-nombre-apellido-rol-dob
+$dni = $_POST['reg-user'] ;
+$nombre = $_POST['reg-name'];
+$apellido = $_POST['reg-surname'];
+$dob = date('Y-m-d', strtotime($_POST['reg-dob']));
+$rol = $_POST['reg-rol'];
+$contra = $_POST['reg-pass'];
+$recontra = $_POST['reg-pass-repeat'];
+
+$action = "INSERT INTO users(user,nombre,apellido,dob,rol,password) VALUES ('$dni','$nombre','$apellido','$dob','$rol','$contra')"; // 
+$consultaRegister = mysqli_query($conexion,$action); // une los datos de conexion + la consulta SQL
+//$resultadoObtenido = mysqli_fetch_array($consultaRegister);
+
+if($consultaRegister){
+echo "se pudo";
+} else {
+echo "no se pudo";
+}
+
+?>

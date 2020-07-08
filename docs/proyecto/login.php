@@ -1,3 +1,7 @@
+<?php
+     session_start();
+    $error = $_SESSION['error'];
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,12 +10,11 @@
         <link rel="stylesheet" href="../../styles/proyecto-styles.css">
 
         <title>Login - ConcursAR</title>
+      
+
     </head>
     <body>
-        <?php
-     session_start();
-     $error = $_SESSION['error'];
-    ?>
+      
         <header id="header">
             <img src="../../img/escudo.png" class="escudo-header">
             <h2 class="header-brand">
@@ -23,8 +26,8 @@
                     <div class="hero-2">
                         <div class="white-font">
                             <h1 class="custom-h1">Iniciar sesión o Registarte</h1>
-                            <div class="log-row">
-                                <div class="col-log">
+                            <div class="log-row"><!-- BOTONES LOGIN REGISTER* -->
+                                <div class="col-log"> 
                                     <p class="custom-text text-center">¿Ya tenés cuenta?</p>
                                     <button class="p-btn white-font modal-login">Iniciar Sesión</button>
                                 </div>
@@ -34,7 +37,7 @@
                                 </div>
 
                                 <?php
-                            if($error){
+                            if($error){              //MENSAJE ERROR LOGIN
                         ?>
                                 <!-- <div style="visibility:visible;opacity:1;" class="modal-bg-login"> -->
                                 <div class="modal-bg-login bg-active">
@@ -68,43 +71,37 @@
 
                                         </form>
                                     </div>
-                                    <div class="modal-bg-reg">
-                                        <form action="./home-doc.html" method="POST" class="modal-b">
+                                    <div class="modal-bg-reg">   <!-- MODAL REGISTRO -->
+                                        <form action="./registrar.php" method="POST" class="modal-b">
                                             <div class="reg-camp">
                                                 <h3>Registrarse</h3>
                                             </div>
                                             <div class="reg-camp">
                                                 <label for="login-user">DNI:</label>
-                                                <input type="number" name="reg-user"></div>
+                                                <input type="number" name="reg-user" REQUIRED></div>
                                             <div class="reg-camp">
                                                 <label for="reg-name">Nombre:</label>
-                                                <input type="text" name="reg-name">
+                                                <input type="text" name="reg-name" REQUIRED>
                                                 <label for="reg-lastname">Apellido:</label>
-                                                <input type="text" name="reg-lastname"></div>
+                                                <input type="text" name="reg-surname" REQUIRED></div>
                                             <div class="reg-camp">
                                                 <label for="reg-dob">Fecha de nacimiento:</label>
-                                                <input type="date" name="reg-dob" id="reg-dob"></div>
+                                                <input type="date"  value="<?php echo date('Y-m-d'); ?>" name="reg-dob" id="reg-dob" REQUIRED></div>
                                             <div class="reg-camp">
                                                 <label for="reg-rol">Rol en la Plataforma:</label>
-                                                <select name="reg-rol" id="reg-rol">
-                                                    <option value="SAD">Administrativo del SAD</option>
-                                                    <option value="SEC">Secretario de escuela</option>
-                                                    <option value="POS">Postulante docente</option>
-                                                </select>
-                                                <label for="reg-cargo">Cargo:</label>
-                                                <select name="reg-sad-cargo" id="reg-sad-cargo">
-                                                    <option value="null" selected="selected">-</option>
-                                                    <option value="cargo-sad-adm">Representante SAD</option>
-                                                </select>
-                                                <select name="reg-sec-cargo" id="reg-sec-cargo">
-                                                    <option value="null" selected="selected">-</option>
-                                                    <option value="cargo-sec-sec">Secretario</option>
-                                                </select>
-                                                <select name="reg-pos-cargo" id="reg-pos-cargo">
-                                                    <option value="null" selected="selected">-</option>
-                                                    <option value="cargo-pos-preceptor">Preceptor</option>
-                                                    <option value="cargo-pos-profesor">Profesor</option>
-                                                    <option value="cargo-pos-maestro">Maestro</option>
+                                                <select name="reg-rol" id="reg-rol" REQUIRED>
+                                                    <option value="NUL" selected>-- Seleccione --</option>    
+                                                    <optgroup label="Secretaria Asuntos Doc">
+                                                     <option value="sad"> Administrativo del SAD </option>
+                                                     </optgroup>
+                                                    <optgroup label="Secretaría">
+                                                    <option value="secretario">Secretario de escuela</option>   
+                                                    </optgroup>
+                                                    <optgroup label="Docente">
+                                                    <option value="profesor">Profesor</option>
+                                                    <option value="maestro">Maestro</option>
+                                                    <option value="preceptor">Preceptor</option>
+                                                    </optgroup>  
                                                 </select>
                                             </div>
                                             <div class="reg-camp">
@@ -135,6 +132,6 @@
                     <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
                 </p>
             </footer>
-            <script src="./../../../edi2/scripts/proyecto-script.js"></script>
+            <script src="/edi2/scripts/proyecto-script.js"></script>
         </body>
     </html>
