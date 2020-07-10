@@ -74,7 +74,7 @@
     font-weight: 700;
     margin: 5px;
     align-self: center;
-    bottom: 40px;
+    bottom: 16px;
 }
 .white-font {
     color: white;
@@ -250,6 +250,10 @@ main {
     font-size: 3vh;
     font-weight: 700;
     color: white;
+}
+.col-b-profile {
+    flex: 1;
+    padding: 1rem 0 1rem;
 }
 .search-btn {
     border-radius: 13px;

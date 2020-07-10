@@ -144,12 +144,27 @@ $convertedSurname = ucfirst($surname);
                             <div class="flex-parent">
                                 <div class="col-1">
                                     <div class="profile-photo">
-
-                                        <img src="../../img/default-user.jpg" class="user-profile">
+                                    <?php
+                $buscarImgs = "SELECT image FROM users WHERE user='$usuario' ";
+                $isthereImgs = $conexion->query($buscarImgs);
+                $colocar = $isthereImgs->fetch_assoc();
+            if($colocar['image']){
+            ?>
+                                    <img
+                                        src="data:image/jpg;base64,<?php echo base64_encode($colocar['image']); ?>"
+                                        class="user-profile">
+                                <?php
+            }else {
+            ?>
+                                    <img src="../../img/default-user.jpg" class="user-profile">
+                                    <?php
+            }
+            ?>
+                                        
 
                                     </div>
                                 </div>
-                                <div class="col-2">
+                                <div class="col-b-profile">
                                     <h3>Mi perfil</h3>
                                     <div class="muestra">
                                         <span>Nombre:</span>
@@ -190,7 +205,7 @@ $convertedSurname = ucfirst($surname);
                                 </div>
                             </div>
 
-                            <button class="close-btn">Cerrar</button>
+                            <a href="./profile-doc.php" class="close-btn">Cerrar</a>
                         </form>
                     </div>
                     <!-- termina modal profile -->

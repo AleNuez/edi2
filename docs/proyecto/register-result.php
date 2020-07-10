@@ -24,7 +24,7 @@
         <main>
             <div class="main-without-nav">
                 <article id="article">
-                    <div class="hero-2">
+                    <div class="hero-1">
                         <div class="white-font">
                             <h1 class="custom-h1">Registrado Correctamente!</h1>
                             
