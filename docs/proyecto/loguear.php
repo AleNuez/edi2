@@ -6,7 +6,7 @@ session_start();
 $usuario = $_POST['user']; //usuario y clave enviado por usuario en el form
 $clave = $_POST['pass'];
 $error = TRUE; // Estatus de error para enviar mensaje bajo el formulario
-
+$error_count = 1;
 
 $q = "SELECT COUNT(*) as contar from users where user ='$usuario' and password = '$clave' "; // Selecciona la fila que coincida con usuario y contraseña
 $consulta = mysqli_query($conexion,$q); // une los datos de conexion + la consulta SQL
@@ -21,6 +21,7 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $_SESSION['username'] = $usuario; //tomo el usuario desde la bd, o sea su identificacion
     $rol = $datosObtenidos['rol'];
     $_SESSION['error'] = !$error; // guardo en la sesion que error es false, o sea , todo bien.
+   
     switch($rol){
         case "profesor":
             header("location: home-doc.php"); // redirecciono al home.
@@ -42,7 +43,5 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $_SESSION['error'] = $error;   //guardo en la sesion la variable de error en true
     header("location: login.php"); // redirijo al login nuevamente.
 }
-
-
 
 ?>

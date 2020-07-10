@@ -15,11 +15,21 @@ $recontra = $_POST['reg-pass-repeat'];
 $action = "INSERT INTO users(user,nombre,apellido,dob,rol,password) VALUES ('$dni','$nombre','$apellido','$dob','$rol','$contra')"; // 
 $consultaRegister = mysqli_query($conexion,$action); // une los datos de conexion + la consulta SQL
 //$resultadoObtenido = mysqli_fetch_array($consultaRegister);
+// Datos de nueva sesión: 
+$_SESSION['name'] = $nombre;
+$_SESSION['rol'] = $rol;
+$_SESSION['surname'] = $apellido;
+$_SESSION['username'] = $dni;
 
 if($consultaRegister){
-echo "se pudo";
+
+   header('location: ./register-result.php');
+
+
+
 } else {
-echo "no se pudo";
+
+header('login.php');
 }
 
 ?>
