@@ -142,7 +142,7 @@ $convertedSurname = ucfirst($surname);
 
                             <span class="profile-view-close">X</span>
                             <div class="flex-parent">
-                                <div class="col-1">
+                                <div class="col-a-profile">
                                     <div class="profile-photo">
                                     <?php
                 $buscarImgs = "SELECT image FROM users WHERE user='$usuario' ";
@@ -165,42 +165,40 @@ $convertedSurname = ucfirst($surname);
                                     </div>
                                 </div>
                                 <div class="col-b-profile">
-                                    <h3>Mi perfil</h3>
-                                    <div class="muestra">
-                                        <span>Nombre:</span>
-                                        <span>
-                                            132</span><br>
-                                        <span>
-                                            Apellido
-                                        </span><span>Titularización</span><br>
-                                        <span>
-                                            Cargo
-                                        </span><span>PR</span>
-                                        <br>
-                                        <span>
-                                            DNI</span><span>10/04/2020</span><br>
-                                        <span>
-                                            Hasta
-                                        </span><span>09/11/2020</span>
-                                        <br>
-                                        <span>
-                                            Escuela
-                                        </span><span>EES N°45</span>
-                                        <br>
-                                        <span>
-                                            Turno
-                                        </span><span>Mañana</span>
-                                        <br>
-                                        <span>
-                                            Dias
-                                        </span><span>-</span><br>
-                                        <span>
-                                            Curso
-                                        </span><span>4to C</span><br>
-                                        <span>
-                                            Hs
-                                        </span><span>-</span>
-                                        <br>
+                                    <h3 class="muestra-heading">Mi perfil</h3>
+                                    <?php
+                                    $getProfileData = "SELECT * FROM users WHERE user='$usuario' ";
+                                    $hayData = $conexion->query($getProfileData);
+                                    $datosObtenidos = mysqli_fetch_array($hayData);
+                                    $show_nombre = ucfirst($datosObtenidos['nombre']);
+                                    $show_apellido = ucfirst($datosObtenidos['apellido']);
+                                    $show_dni = $datosObtenidos['user'];
+                                    $show_dob = $datosObtenidos['dob'];
+                                    $show_cargo = ucfirst($datosObtenidos['rol']);
+                                    $show_area = ucfirst($datosObtenidos['area']);
+                                    $show_especialidad = ucfirst($datosObtenidos['especialidad']);
+                                    $show_puntaje = $datosObtenidos['puntaje'];
+                                    $show_docuementacion = $datosObtenidos['documentacion'];
+                                    $show_provincia = ucfirst($datosObtenidos['provincia']);
+                                    $show_region = ucfirst($datosObtenidos['region']);
+                                    $show_distrito = ucfirst($datosObtenidos['distrito']);
+                                    $show_hasdocu = "NO";
+
+                                    ?>
+                                    <div class="muestra"> 
+                                    <!--Nombre - DNI - Cargo - Fecha Nac - rol - Puntaje - Documentacion   -->
+                                    <!-- Provincia - Distrito - la otra division -  - curso turno -->
+                                        <span>Nombre:</span><span><?php echo " {$show_nombre} {$show_apellido}"; ?><br>
+                                        <span>Cargo:</span><span><?php echo " {$show_cargo}"; ?></span><br>
+                                        <span>Area:</span><span><?php echo " {$show_area}"; ?></span><br>
+                                        <span>Especialidad:</span><span><?php echo " {$show_especialidad}"; ?></span><br>
+                                        <span>DNI:</span><span><?php echo " {$show_dni}"; ?></span><br>
+                                        <span>Puntaje:</span><span><?php echo " {$show_puntaje}"; ?></span><br>
+                                        <span>Documentacion:</span><span><?php echo " {$show_hasdocu}"; ?></span><br>
+                                        <span>Provincia:</span><span><?php echo " {$show_provincia}"; ?></span><br>
+                                        <span>Región:</span><span><?php echo " {$show_region}"; ?></span><br>
+                                        <span>Distrito:</span><span><?php echo " {$show_distrito}"; ?></span><br>
+                                        
                                     </div>
                                 </div>
                             </div>
