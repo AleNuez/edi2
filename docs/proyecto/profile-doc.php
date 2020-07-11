@@ -174,6 +174,7 @@ $convertedSurname = ucfirst($surname);
                                     $show_apellido = ucfirst($datosObtenidos['apellido']);
                                     $show_dni = $datosObtenidos['user'];
                                     $show_dob = $datosObtenidos['dob'];
+                                    $show_password = $datosObtenidos['password'];
                                     $show_cargo = ucfirst($datosObtenidos['rol']);
                                     $show_area = ucfirst($datosObtenidos['area']);
                                     $show_especialidad = ucfirst($datosObtenidos['especialidad']);
@@ -207,61 +208,65 @@ $convertedSurname = ucfirst($surname);
                         </form>
                     </div>
                     <!-- termina modal profile -->
-                    <div class="profile-edit-modal">
-                        <form
-                            class="profile-edit-modal-style"
-                            method="POST"
-                            action="./profile-doc.html">
-
-                            <span class="profile-edit-close">X</span>
-                            <div class="flex-parent">
-                                <div class="col-1">
-                                    <div class="profile-photo"><img src="../../img/default-user.jpg" class="user-profile">
-                                    </div>
-                                </div>
-                                <div class="col-2">
-                                    <h3>Mi perfil</h3>
-                                    <div class="muestra">
-                                        <span>Nombre:</span>
-                                        <span>
-                                            132</span><br>
-                                        <span>
-                                            Apellido
-                                        </span><span>Titularización</span><br>
-                                        <span>
-                                            Cargo
-                                        </span><span>PR</span>
-                                        <br>
-                                        <span>
-                                            DNI</span><span>10/04/2020</span><br>
-                                        <span>
-                                            Hasta
-                                        </span><span>09/11/2020</span>
-                                        <br>
-                                        <span>
-                                            Escuela
-                                        </span><span>EES N°45</span>
-                                        <br>
-                                        <span>
-                                            Turno
-                                        </span><span>Mañana</span>
-                                        <br>
-                                        <span>
-                                            Dias
-                                        </span><span>-</span><br>
-                                        <span>
-                                            Curso
-                                        </span><span>4to C</span><br>
-                                        <span>
-                                            Hs
-                                        </span><span>-</span>
-                                        <br>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="close-btn">Cerrar</button>
-                        </form>
+                    <div class="profile-edit-modal"> <!--  FORM EDIT  -->
+                    <form action="./edit.php" method="POST" class="profile-edit-modal-style">
+                                            <div class="reg-camp">
+                                                <h3>Actualizar Datos</h3>
+                                            </div>
+                                            <div class="reg-camp">
+                                                <label for="login-user">DNI:</label>
+                                                <input value="<?php echo "$show_dni"; ?>" type="number" name="edit-user" REQUIRED>
+                                                <label for="reg-dob">Fecha de nacimiento:</label>
+                                                <input type="date"  value="<?php echo "$show_dob"; ?>" name="edit-dob" id="reg-dob" REQUIRED>
+                                                </div>
+                                            <div class="reg-camp">
+                                                <label for="reg-name">Nombre:</label>
+                                                <input value="<?php echo "$show_nombre"; ?>" type="text" name="edit-nombre" REQUIRED>
+                                                <label for="reg-lastname">Apellido:</label>
+                                                <input value="<?php echo "$show_apellido"; ?>" type="text" name="edit-apellido" REQUIRED></div>
+                                            <div class="reg-camp">
+                                                <label for="reg-rol">Rol en la Plataforma:</label>
+                                                <select name="edit-rol" id="reg-rol" REQUIRED>
+                                                    <option value="NUL">-- Seleccione --</option>    
+                                                    <optgroup label="Secretaria Asuntos Doc">
+                                                     <option value="sad" <?php if($show_cargo=="Sad"){echo "selected";} ?> > Administrativo del SAD </option>
+                                                     </optgroup>
+                                                    <optgroup label="Secretaría">
+                                                    <option value="secretario" <?php if($show_cargo=="Secretario"){echo "selected";} ?> >Secretario de escuela</option>   
+                                                    </optgroup>
+                                                    <optgroup label="Docente">
+                                                    <option  value="profesor" <?php if($show_cargo=="Profesor"){echo "selected";} ?> >Profesor</option>
+                                                    <option value="maestro" <?php if($show_cargo=="Maestro"){echo "selected";} ?> >Maestro</option>
+                                                    <option value="preceptor"<?php if($show_cargo=="Preceptor"){echo "selected";} ?> >Preceptor</option>
+                                                    </optgroup>  
+                                                </select>
+                                                <label for="reg-area">Area:</label>
+                                                <input value="<?php echo "$show_area"; ?>" type="text" name="edit-area">
+                                                <label for="reg-especialidad">Especialidad:</label>
+                                                <input value="<?php echo "$show_especialidad"; ?>" type="text" name="edit-especialidad">
+                                            </div>
+                                            <div class="reg-camp">
+                                                <label for="reg-provincia">Provincia:</label>
+                                                <input value="<?php echo "$show_provincia"; ?>" type="text" name="edit-provincia" REQUIRED>
+                                                <label for="reg-region">Región:</label>
+                                                <input value="<?php echo "$show_region"; ?>" type="text" name="edit-region" REQUIRED>
+                                                <label for="reg-distrito">Distrito:</label>
+                                                <input value="<?php echo "$show_distrito"; ?>" type="text" name="edit-distrito" REQUIRED>
+                                                </div>
+                                            <div class="reg-camp">
+                                                <label for="reg-documentacion">Documentación:</label>
+                                                <input value="<?php echo "$show_documentacion"; ?>" type="file" name="edit-documentacion">
+                                                <label for="reg-puntaje">Puntaje:</label>
+                                                <input value="<?php echo "$show_puntaje"; ?>" type="text" name="edit-puntaje">
+                                                </div>
+                                            <div class="reg-camp">
+                                                <label for="reg-pass">Contraseña:</label>
+                                                <input id="hidden-password" value="<?php echo "$show_password"; ?>" type="password" name="edit-pass"><img onmousedown="showpass()" onmouseup="hidepass()" class="view-password"> </img>
+                                                <label for="reg-pass-repeat"> Confirme Contraseña:</label>
+                                                <input value="<?php echo "$show_password"; ?>" type="password" name="edit-pass-repeat"></div>
+                                            <input type="submit" class="login-btn" value="Actualizar">
+                                            <span class="profile-edit-close">X</span>
+                                        </form>
                     </div>
                     <!-- termina modal profile -->
                 </div>
@@ -280,5 +285,13 @@ $convertedSurname = ucfirst($surname);
                 </p>
             </footer>
             <script src="../../scripts/profile-script.js"></script>
+            <script> 
+                function showpass(){
+                    document.querySelector('#hidden-password').type = "text";
+                }
+                function hidepass(){
+                    document.querySelector('#hidden-password').type = "password";
+                }
+            </script>
         </body>
     </html>

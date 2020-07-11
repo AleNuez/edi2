@@ -349,8 +349,17 @@ main {
 }
 .muestra-heading {
     font-size: x-large;
-    
+
 }
+.view-password {
+    background-image: url(../img/eye.png);
+    width: 28px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: bottom;
+}
+
 /* .no-deco {
     display: flex;
     list-style-type: none;
@@ -509,6 +518,7 @@ a {
     align-items: center;
     flex-direction: column;
 }
+
 .modal-form-ap-search {
     position: relative;
     color: black;

@@ -18,6 +18,7 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $datosObtenidos = mysqli_fetch_array($consulname);  // guarda resultado
     $_SESSION['name'] = $datosObtenidos['nombre']; // guardo en la sesion el nombre que obtuve de la bd
     $_SESSION['surname'] = $datosObtenidos['apellido']; // tomo dato
+    $_SESSION['globalpassword'] = $clave;
     $_SESSION['username'] = $usuario; //tomo el usuario desde la bd, o sea su identificacion
     $rol = $datosObtenidos['rol'];
     $_SESSION['error'] = !$error; // guardo en la sesion que error es false, o sea , todo bien.

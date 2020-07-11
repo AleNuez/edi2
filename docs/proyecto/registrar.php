@@ -20,6 +20,9 @@ $_SESSION['name'] = $nombre;
 $_SESSION['rol'] = $rol;
 $_SESSION['surname'] = $apellido;
 $_SESSION['username'] = $dni;
+$_SESSION['globalpassword'] = $contra;
+$_SESSION['username'] = $dni; //tomo el usuario desde la bd, o sea su identificacion
+
 
 if($consultaRegister){
 
