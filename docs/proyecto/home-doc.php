@@ -1,12 +1,3 @@
-<?php
-include("conexion.php");
-session_start();
-$usuario = $_SESSION['username'];
-$name = $_SESSION['name'];
-$convertedName = ucfirst($name);
-$surname = $_SESSION['surname'];
-$convertedSurname = ucfirst($surname);
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,7 +9,15 @@ $convertedSurname = ucfirst($surname);
     </head>
     <body>
 
-     
+        <?php
+include("conexion.php");
+session_start();
+$usuario = $_SESSION['username'];
+$name = $_SESSION['name'];
+$convertedName = ucfirst($name);
+$surname = $_SESSION['surname'];
+$convertedSurname = ucfirst($surname);
+?>
         <header id="header">
             <div class="header-escudo">
                 <a href="./home-doc.php" class="header-link"><img src="../../img/escudo.png" class="escudo-header">
