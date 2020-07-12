@@ -2,10 +2,10 @@
 var picBtn = document.querySelector("#profile-pic-btn"); // PICTURE
 var picBg = document.querySelector('.profile-pic-modal');
 var picClose = document.querySelector('.profile-pic-close');
- var viewBtn = document.querySelector('#profile-view-btn'); // EDIT
+ var viewBtn = document.querySelector('#profile-view-btn'); // VIEW 
  var viewBg = document.querySelector('.profile-view-modal');
  var viewClose = document.querySelector('.profile-view-close');
- var editBtn = document.querySelector('#profile-edit-btn'); // VIEW
+ var editBtn = document.querySelector('#profile-edit-btn'); // EDIT
  var editBg = document.querySelector('.profile-edit-modal');
  var editClose = document.querySelector('.profile-edit-close');
 
