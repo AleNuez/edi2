@@ -1,7 +1,5 @@
 <?php
 
-
-
 function resize_image($file, $w, $h, $crop=FALSE) {
     list($width, $height) = getimagesize($file);
     $r = $width / $height;
@@ -42,13 +40,11 @@ $saveImg = "UPDATE users SET image='$Img' WHERE user = '$user'";
 $resultadosave = $conexion->query($saveImg);
 
 if($resultadosave){
-    echo "Imagen Subida Exitosamente";
-    sleep(3);
-    header("location: profile-doc.php");
+   
+    header("location: ./profile-doc.php");
 } else {
-    echo "Error al guardar";
-    sleep(3);
-    header("location: profile-doc.php");
+   
+    header("location: ./profile-doc.php");
     
 }
 
