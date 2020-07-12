@@ -142,6 +142,7 @@ $convertedSurname = ucfirst($surname);
 
                             <span class="profile-view-close">X</span>
                             <div class="flex-parent">
+
                                 <div class="col-a-profile">
                                     <div class="profile-photo">
                                     <?php

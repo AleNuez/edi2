@@ -40,7 +40,24 @@ if($resultado['filas']>0){  // Si hay un resultado en el array...
 
         $_SESSION['name'] = $nombre;
         $_SESSION['surname'] = $apellido;
-        header('location: ./profile-doc.php');
+        switch($cargo) {
+            case 'profesor':
+                header('location: ./profile-doc.php');
+            break;
+            case 'maestro':
+                header('location: ./profile-doc.php');
+            break;
+            case 'preceptor':
+                header('location: ./profile-doc.php');
+            break;
+            case 'secretario':
+                header('location: ./profile-sec.php');
+            break;
+            case 'sad':
+                header('location: ./profile-sad.php');
+            break;
+        }
+        
      
      
      
