@@ -6,7 +6,7 @@ session_start();
 $usuario = $_POST['user']; //usuario y clave enviado por usuario en el form
 $clave = $_POST['pass'];
 $error = TRUE; // Estatus de error para enviar mensaje bajo el formulario
-
+$error_count = 1;
 
 $q = "SELECT COUNT(*) as contar from users where user ='$usuario' and password = '$clave' "; // Selecciona la fila que coincida con usuario y contraseña
 $consulta = mysqli_query($conexion,$q); // une los datos de conexion + la consulta SQL
@@ -18,11 +18,19 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $datosObtenidos = mysqli_fetch_array($consulname);  // guarda resultado
     $_SESSION['name'] = $datosObtenidos['nombre']; // guardo en la sesion el nombre que obtuve de la bd
     $_SESSION['surname'] = $datosObtenidos['apellido']; // tomo dato
+    $_SESSION['globalpassword'] = $clave;
     $_SESSION['username'] = $usuario; //tomo el usuario desde la bd, o sea su identificacion
     $rol = $datosObtenidos['rol'];
     $_SESSION['error'] = !$error; // guardo en la sesion que error es false, o sea , todo bien.
+   
     switch($rol){
-        case "docente":
+        case "profesor":
+            header("location: home-doc.php"); // redirecciono al home.
+        break;
+        case "maestro":
+            header("location: home-doc.php"); // redirecciono al home.
+        break;
+        case "preceptor":
             header("location: home-doc.php"); // redirecciono al home.
         break;
         case "secretario":
@@ -36,7 +44,5 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $_SESSION['error'] = $error;   //guardo en la sesion la variable de error en true
     header("location: login.php"); // redirijo al login nuevamente.
 }
-
-
 
 ?>
