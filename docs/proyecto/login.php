@@ -140,6 +140,6 @@
                     <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
                 </p>
             </footer>
-            <script src="/edi2/scripts/proyecto-script.js"></script>
+            <script src="/scripts/proyecto-script.js"></script>
         </body>
     </html>
