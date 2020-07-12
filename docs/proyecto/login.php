@@ -13,11 +13,10 @@
         <link rel="stylesheet" href="../../styles/proyecto-styles.css">
 
         <title>Login - ConcursAR</title>
-      
 
     </head>
     <body>
-      
+
         <header id="header">
             <img src="../../img/escudo.png" class="escudo-header">
             <h2 class="header-brand">
@@ -29,8 +28,9 @@
                     <div class="hero-2">
                         <div class="white-font">
                             <h1 class="custom-h1">Iniciar sesión o Registarte</h1>
-                            <div class="log-row"><!-- BOTONES LOGIN REGISTER* -->
-                                <div class="col-log"> 
+                            <div class="log-row">
+                                <!-- BOTONES LOGIN REGISTER* -->
+                                <div class="col-log">
                                     <p class="custom-text text-center">¿Ya tenés cuenta?</p>
                                     <button class="p-btn white-font modal-login">Iniciar Sesión</button>
                                 </div>
@@ -74,37 +74,45 @@
 
                                         </form>
                                     </div>
-                                    <div class="modal-bg-reg">   <!-- MODAL REGISTRO -->
+                                    <div class="modal-bg-reg">
+                                        <!-- MODAL REGISTRO -->
                                         <form action="./registrar.php" method="POST" class="modal-b">
                                             <div class="reg-camp">
                                                 <h3>Registrarse</h3>
                                             </div>
                                             <div class="reg-camp">
                                                 <label for="login-user">DNI:</label>
-                                                <input type="number" name="reg-user" REQUIRED></div>
+                                                <input type="number" name="reg-user" required="REQUIRED"></div>
                                             <div class="reg-camp">
                                                 <label for="reg-name">Nombre:</label>
-                                                <input type="text" name="reg-name" REQUIRED>
+                                                <input type="text" name="reg-name" required="REQUIRED">
                                                 <label for="reg-lastname">Apellido:</label>
-                                                <input type="text" name="reg-surname" REQUIRED></div>
+                                                <input type="text" name="reg-surname" required="REQUIRED"></div>
                                             <div class="reg-camp">
                                                 <label for="reg-dob">Fecha de nacimiento:</label>
-                                                <input type="date"  value="<?php echo date('Y-m-d'); ?>" name="reg-dob" id="reg-dob" REQUIRED></div>
+                                                <input
+                                                    type="date"
+                                                    value="<?php echo date('Y-m-d'); ?>"
+                                                    name="reg-dob"
+                                                    id="reg-dob"
+                                                    required="REQUIRED"></div>
                                             <div class="reg-camp">
                                                 <label for="reg-rol">Rol en la Plataforma:</label>
-                                                <select name="reg-rol" id="reg-rol" REQUIRED>
-                                                    <option value="NUL" selected>-- Seleccione --</option>    
+                                                <select name="reg-rol" id="reg-rol" required="REQUIRED">
+                                                    <option value="NUL" selected="selected">-- Seleccione --</option>
                                                     <optgroup label="Secretaria Asuntos Doc">
-                                                     <option value="sad"> Administrativo del SAD </option>
-                                                     </optgroup>
+                                                        <option value="sad">
+                                                            Administrativo del SAD
+                                                        </option>
+                                                    </optgroup>
                                                     <optgroup label="Secretaría">
-                                                    <option value="secretario">Secretario de escuela</option>   
+                                                        <option value="secretario">Secretario de escuela</option>
                                                     </optgroup>
                                                     <optgroup label="Docente">
-                                                    <option value="profesor">Profesor</option>
-                                                    <option value="maestro">Maestro</option>
-                                                    <option value="preceptor">Preceptor</option>
-                                                    </optgroup>  
+                                                        <option value="profesor">Profesor</option>
+                                                        <option value="maestro">Maestro</option>
+                                                        <option value="preceptor">Preceptor</option>
+                                                    </optgroup>
                                                 </select>
                                             </div>
                                             <div class="reg-camp">
