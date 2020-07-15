@@ -1,6 +1,30 @@
+/* STYLES FOR MOBILE VIEW -- STYLES FOR MOBILE VIEW  -- STYLES FOR MOBILE VIEW  */
+                                                                /* GENERAL */
 * {
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0px -10px 0px 0px;
+    padding: 0px;
+    flex-direction: column;
+}
+.white-font {
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+                                                                /* HEADER */
+#header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(40deg, #63b9ff, #add7fa);
+    color: white;
+}
+.header-concursar {
+    display: inline-flex;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    align-items: center;
 }
 .escudo-header {
     width: 60px;
@@ -12,17 +36,60 @@
     align-items: center;
     color: white;
 }
-.profile-photo {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-}
 .user-header {
 
     border-radius: 25px;
     width: 45px;
     height: 45px;
 }
+.header-escudo {
+    align-items: center;
+    display: flex;
+    position: inherit;
+
+}
+                                                                    /* MAIN */
+
+
+#article {
+    text-align: center;
+    background: linear-gradient(40deg, #fff, #fff);
+    /* padding-top: 1rem; */
+    /* padding-bottom: 3rem; */
+    /* flex: 3; */
+}
+.custom-h1 {
+    font-size: 8vh;
+    text-shadow: 1px 1px black;
+    margin: 0rem 1rem;
+}
+.custom-text {
+    text-align: center;
+    margin: 2rem 2rem 6rem 2rem;
+    font-size: 22px;
+    font-weight: 600;
+    text-shadow: 2px 2px black;
+}
+.main-begin-btn {
+    margin-top:-3rem ;
+}
+.hero-3 {
+    /* Aula con alumnos */
+    background-image: url("../img/001.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 27%;
+    height: 100%;
+    width: 98%;
+    padding: 3rem 1rem 7rem 0rem;
+}
+
+.profile-photo {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .user-profile {
     align-self: center;
     border-radius: 15px;
@@ -47,12 +114,7 @@
     position: absolute;
     right: 3rem;
 }
-.header-escudo {
-    align-items: center;
-    display: flex;
-    position: inherit;
 
-}
 .home-opt {
     display: flex;
     list-style: none;
@@ -76,49 +138,18 @@
     align-self: center;
     bottom: 16px;
 }
-.white-font {
-    color: white;
-}
-.text-center {
-    text-align: center;
-}
-.custom-h1 {
-    font-size: 10.5vh;
-    text-shadow: 1px 1px black;
-    margin: 2rem 1rem;
-}
+
+
 .left-h1 {
     text-align: left;
     font-size: 8.5vh;
     text-shadow: 1px 1px black;
     margin: 2rem 1rem;
 }
-body {
-    height: 98vh;
-    display: flex;
-    flex-direction: column;
-}
-main {
 
-    flex-direction: column;
-    display: flex;
-    flex: 1;
-}
-#header {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(40deg, #63b9ff, #add7fa);
-    color: white;
-}
-#article {
-    text-align: center;
 
-    background: linear-gradient(40deg, #fff, #fff);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    flex: 3;
 
-}
+
 .card {
     text-align: center;
     padding-top: 1rem;
@@ -167,15 +198,7 @@ main {
     height: 100%;
     width: 100%;
 }
-.hero-3 {
-    /* Aula con alumnos */
-    background-image: url("../img/001.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 27%;
-    height: 100%;
-    width: 100%;
-}
+
 .hero-4 {
     /* Adolescentes en examen */
     background-image: url("../img/007.jpg");
@@ -305,19 +328,13 @@ main {
     color: white;
 
 }
-.custom-text {
-    text-align: center;
-    margin: -2rem 0 2rem;
-    font-size: 20px;
-    font-weight: 600;
-    text-shadow: 2px 2px black;
-}
+
 .welcome-text {
-    background-color: rgba(60, 132, 214, 0.822);
+    background-color: rgba(60, 132, 214, 0.89);
 }
 .log-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 .col-log {
@@ -332,13 +349,7 @@ main {
     padding-bottom: 4rem;
     flex: 1 5rem;
 }
-#footer {
-    color: white;
-    text-align: center;
-    background: linear-gradient(40deg, #4ab1e8, #99cce7);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
+
 .left {
     text-align: left;
     margin: 0 0 1rem 2rem;
@@ -360,14 +371,6 @@ main {
     vertical-align: bottom;
 }
 
-/* .no-deco {
-    display: flex;
-    list-style-type: none;
-}
-
-.inline {
-    display: flex;
-} */
 .hr {
     width: 30px;
     border: 5px white;
@@ -377,14 +380,7 @@ main {
     text-align: left;
     margin-left: 5px;
 }
-/* .header-button {
-    float: right;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 10px;
-    margin: -8px 8px;
-    box-shadow: 0px 4px 4px -3px black;  
-} */
+
 .copyright,
 a {
     text-align: center;
@@ -392,6 +388,7 @@ a {
 
 }
 /* MODAL */
+
 .modal-bg-ap-search,
 .modal-bg-login,
 .modal-bg-postula,
@@ -404,9 +401,10 @@ a {
 .sec-upload-modal {
     /* DIV ESTRUCTURA  */
     position: absolute;
-    width: 100%;
+    width: 105%;
     height: 100vh;
     top: 0;
+    padding: 1rem 1rem 21rem 0rem;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -414,7 +412,6 @@ a {
     align-items: center;
     visibility: hidden;
     opacity: 0;
-
 }
 .bg-active {
     /* OCULTA, UNIVERSAL  */
@@ -500,8 +497,8 @@ a {
     position: relative;
     color: black;
     background-color: #d3f4ff;
-    width: 50%;
-    height: 50%;
+    width: 68%;
+    height: 61%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -632,14 +629,56 @@ table.customTable thead {
     background-color: #7EA8F8;
 }
 
+
+                                                                    /* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    background: linear-gradient(40deg, #4ab1e8, #99cce7);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footer-more-info {
+    flex: 1;
+}
+.footer-links {
+    font-size: x-small;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+.footer-a-tags {
+    flex: 1;
+}
+
+
+/* STYLES FOR TABLET VIEW -- STYLES FOR TABLET VIEW  -- STYLES FOR TABLET VIEW  */
+                                                                                   
+
 @media (min-width: 600px) {
+     /* GENERAL */
+                                                                                   
+                                                                                   
+                                                                                 
 
     body {
         flex-direction: column;
+        display: flex;
+        height: 100vh;
+        margin: 0px -24px 0px 0px;
     }
+                                                                                    /* HEADER */
     .main-without-nav {
         display: flex;
         flex: 1;
+    }
+    .header-concursar {
+        display: inline-flex;
+        margin: 0.5rem 1.5rem 0.5rem 0;
+        align-items: center;
     }
     #navbar {
 
@@ -648,6 +687,7 @@ table.customTable thead {
         padding-bottom: 4rem;
         flex: 1 5rem;
     }
+                                                                                /* MAIN */
     #article {
         background-color: #3BEBFF;
         background: linear-gradient(40deg,#3BEBFF, rgb(148, 241, 252));
@@ -656,6 +696,67 @@ table.customTable thead {
         display: flex;
 
     }
+    .custom-h1 {
+        font-size: 10.5vh;
+        text-shadow: 1px 1px black;
+        margin: 2rem 1rem;
+    }
+    .custom-text {
+        text-align: center;
+        margin: -2rem 0 2rem;
+        font-size: 20px;
+        font-weight: 600;
+        text-shadow: 2px 2px black;
+    }
+    .main-begin-btn {
+        margin-top: 0rem ;
+    }
+    
+    .hero-3 {
+        /* Aula con alumnos */
+        background-image: url("../img/001.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 27%;
+        height: 100%;
+        width: 98%;
+        padding: 3rem 1rem 7rem 0rem;
+    }
+    .log-row { 
+        display: flex;
+        flex-direction: row;
+    }
+
+.modal-bg-ap-search,
+.modal-bg-login,
+.modal-bg-postula,
+.modal-bg-reg,
+.profile-edit-modal,
+.profile-pic-modal,
+.profile-view-modal,
+.sad-upap-modal,
+.sad-upesc-modal,
+.sec-upload-modal {
+    /* DIV ESTRUCTURA  */
+    position: absolute;
+    width: 105%;
+    height: 100vh;
+    top: 0;
+    padding: 1rem 1rem 7rem 0rem;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.bg-active {
+    /* OCULTA, UNIVERSAL  */
+    visibility: visible;
+    opacity: 1;
+}
+
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
         flex-direction: column;
@@ -667,19 +768,43 @@ table.customTable thead {
         background: linear-gradient(40deg, #63b9ff, #add7fa);
         padding: 1rem;
     }
+                                                                    /* FOOTER */
     #footer {
         background: linear-gradient(40deg, #4ab1e8, #99cce7);
+        padding-top: 3rem;
+        padding-bottom: 6rem;
+    }
+    .footer-links {
+        font-size: initial;
+        flex-direction: initial;
+    }
+    .footer-a-tags {
+        padding: 0rem 5rem;
+        margin: 1rem -2rem;
     }
 }
 
+
+/* STYLES FOR DESKTOP VIEW -- STYLES FOR DESKTOP VIEW  -- STYLES FOR DESKTOP VIEW  */
 @media (min-width: 890px) {
+                                                                                     /* GENERAL */
     body {
+        height: 100vh;
         flex-direction: column;
     }
     main {
         flex-direction: row;
         flex: 1;
     }
+                                                                                        /* HEADER */
+    #header {
+        background: linear-gradient(40deg, #63b9ff, #add7fa);
+
+    }
+    #header-menu {
+        display: none;
+    }
+                                                                                         /* MAIN */
     .main-without-nav {
         flex: 3;
     }
@@ -696,14 +821,49 @@ table.customTable thead {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
 
     }
-    #header {
-        background: linear-gradient(40deg, #63b9ff, #add7fa);
-
+    .modal-bg-ap-search,
+    .modal-bg-login,
+    .modal-bg-postula,
+    .modal-bg-reg,
+    .profile-edit-modal,
+    .profile-pic-modal,
+    .profile-view-modal,
+    .sad-upap-modal,
+    .sad-upesc-modal,
+    .sec-upload-modal {
+        /* DIV ESTRUCTURA  */
+        position: absolute;
+        width: 105%;
+        height: 100vh;
+        top: 0;
+        padding: 1rem 1rem 1rem 0rem;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
     }
+    .bg-active {
+        /* OCULTA, UNIVERSAL  */
+        visibility: visible;
+        opacity: 1;
+    }
+ 
+                                                                             /* FOOTER */
     #footer {
         background: linear-gradient(40deg, #4ab1e8, #99cce7);
+        padding-top: 2rem;
+        padding-bottom: 3rem;
     }
-    #header-menu {
-        display: none;
+    .footer-links {
+        display: block;
     }
+    .footer-a-tags {
+        padding: 0rem 0rem;
+        margin: 0rem -2rem;
+        display: contents;
+    }
+ 
 }
