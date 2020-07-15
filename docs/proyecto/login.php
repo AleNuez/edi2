@@ -144,6 +144,6 @@
                 </div>
 
             </footer>
-            <script src="/edi2/scripts/proyecto-script.js"></script>
+            <script src="/scripts/proyecto-script.js"></script>
         </body>
     </html>
