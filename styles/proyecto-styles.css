@@ -1,11 +1,11 @@
 /* STYLES FOR MOBILE VIEW -- STYLES FOR MOBILE VIEW  -- STYLES FOR MOBILE VIEW  */
-                                                                /* GENERAL */
+/* GENERAL */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-    margin: 0px -10px 0px 0px;
-    padding: 0px;
+    margin: 0 -10px 0 0;
+    padding: 0;
     flex-direction: column;
 }
 .white-font {
@@ -14,7 +14,7 @@ body {
 .text-center {
     text-align: center;
 }
-                                                                /* HEADER */
+/* HEADER */
 #header {
     display: flex;
     align-items: center;
@@ -48,8 +48,7 @@ body {
     position: inherit;
 
 }
-                                                                    /* MAIN */
-
+/* MAIN */
 
 #article {
     text-align: center;
@@ -61,17 +60,17 @@ body {
 .custom-h1 {
     font-size: 8vh;
     text-shadow: 1px 1px black;
-    margin: 0rem 1rem;
+    margin: 0 1rem;
 }
 .custom-text {
     text-align: center;
-    margin: 2rem 2rem 6rem 2rem;
+    margin: 2rem 2rem 6rem;
     font-size: 22px;
     font-weight: 600;
     text-shadow: 2px 2px black;
 }
 .main-begin-btn {
-    margin-top:-3rem ;
+    margin-top: -3rem;
 }
 .hero-3 {
     /* Aula con alumnos */
@@ -81,7 +80,7 @@ body {
     background-position-y: 27%;
     height: 100%;
     width: 98%;
-    padding: 3rem 1rem 7rem 0rem;
+    padding: 3rem 1rem 7rem 0;
 }
 
 .profile-photo {
@@ -139,16 +138,12 @@ body {
     bottom: 16px;
 }
 
-
 .left-h1 {
     text-align: left;
     font-size: 8.5vh;
     text-shadow: 1px 1px black;
     margin: 2rem 1rem;
 }
-
-
-
 
 .card {
     text-align: center;
@@ -276,7 +271,7 @@ body {
 }
 .col-b-profile {
     flex: 1;
-    padding: 1rem 0 1rem;
+    padding: 1rem 0;
 }
 .col-a-profile {
     flex: 1;
@@ -363,7 +358,7 @@ body {
 
 }
 .view-password {
-    background-image: url(../img/eye.png);
+    background-image: url("../img/eye.png");
     width: 28px;
     height: 24px;
     background-repeat: no-repeat;
@@ -404,7 +399,7 @@ a {
     width: 105%;
     height: 100vh;
     top: 0;
-    padding: 1rem 1rem 21rem 0rem;
+    padding: 1rem 1rem 21rem 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
@@ -629,8 +624,7 @@ table.customTable thead {
     background-color: #7EA8F8;
 }
 
-
-                                                                    /* FOOTER */
+/* FOOTER */
 #footer {
     display: flex;
     flex-direction: column;
@@ -654,23 +648,18 @@ table.customTable thead {
     flex: 1;
 }
 
-
 /* STYLES FOR TABLET VIEW -- STYLES FOR TABLET VIEW  -- STYLES FOR TABLET VIEW  */
-                                                                                   
 
 @media (min-width: 600px) {
-     /* GENERAL */
-                                                                                   
-                                                                                   
-                                                                                 
+    /* GENERAL */
 
     body {
         flex-direction: column;
         display: flex;
         height: 100vh;
-        margin: 0px -24px 0px 0px;
+        margin: 0 -24px 0 0;
     }
-                                                                                    /* HEADER */
+    /* HEADER */
     .main-without-nav {
         display: flex;
         flex: 1;
@@ -687,7 +676,7 @@ table.customTable thead {
         padding-bottom: 4rem;
         flex: 1 5rem;
     }
-                                                                                /* MAIN */
+    /* MAIN */
     #article {
         background-color: #3BEBFF;
         background: linear-gradient(40deg,#3BEBFF, rgb(148, 241, 252));
@@ -709,9 +698,9 @@ table.customTable thead {
         text-shadow: 2px 2px black;
     }
     .main-begin-btn {
-        margin-top: 0rem ;
+        margin-top: 0;
     }
-    
+
     .hero-3 {
         /* Aula con alumnos */
         background-image: url("../img/001.jpg");
@@ -720,42 +709,53 @@ table.customTable thead {
         background-position-y: 27%;
         height: 100%;
         width: 98%;
-        padding: 3rem 1rem 7rem 0rem;
+        padding: 3rem 1rem 7rem 0;
     }
-    .log-row { 
+
+    .hero-2 {
+        /* Jovenes estudiando */
+        background-image: url("../img/002.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 27%;
+        padding: 4rem 0 0;
+        height: 100%;
+        width: 100%;
+    }
+    .log-row {
         display: flex;
         flex-direction: row;
     }
 
-.modal-bg-ap-search,
-.modal-bg-login,
-.modal-bg-postula,
-.modal-bg-reg,
-.profile-edit-modal,
-.profile-pic-modal,
-.profile-view-modal,
-.sad-upap-modal,
-.sad-upesc-modal,
-.sec-upload-modal {
-    /* DIV ESTRUCTURA  */
-    position: absolute;
-    width: 105%;
-    height: 100vh;
-    top: 0;
-    padding: 1rem 1rem 7rem 0rem;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-}
-.bg-active {
-    /* OCULTA, UNIVERSAL  */
-    visibility: visible;
-    opacity: 1;
-}
+    .modal-bg-ap-search,
+    .modal-bg-login,
+    .modal-bg-postula,
+    .modal-bg-reg,
+    .profile-edit-modal,
+    .profile-pic-modal,
+    .profile-view-modal,
+    .sad-upap-modal,
+    .sad-upesc-modal,
+    .sec-upload-modal {
+        /* DIV ESTRUCTURA  */
+        position: absolute;
+        width: 105%;
+        height: 100vh;
+        top: 0;
+        padding: 1rem 1rem 7rem 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .bg-active {
+        /* OCULTA, UNIVERSAL  */
+        visibility: visible;
+        opacity: 1;
+    }
 
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
@@ -768,26 +768,25 @@ table.customTable thead {
         background: linear-gradient(40deg, #63b9ff, #add7fa);
         padding: 1rem;
     }
-                                                                    /* FOOTER */
+    /* FOOTER */
     #footer {
         background: linear-gradient(40deg, #4ab1e8, #99cce7);
-        padding-top: 3rem;
-        padding-bottom: 6rem;
+        padding-top: 0;
+        padding-bottom: 2rem;
     }
     .footer-links {
         font-size: initial;
         flex-direction: initial;
     }
     .footer-a-tags {
-        padding: 0rem 5rem;
+        padding: 0 5rem;
         margin: 1rem -2rem;
     }
 }
 
-
 /* STYLES FOR DESKTOP VIEW -- STYLES FOR DESKTOP VIEW  -- STYLES FOR DESKTOP VIEW  */
 @media (min-width: 890px) {
-                                                                                     /* GENERAL */
+    /* GENERAL */
     body {
         height: 100vh;
         flex-direction: column;
@@ -796,7 +795,7 @@ table.customTable thead {
         flex-direction: row;
         flex: 1;
     }
-                                                                                        /* HEADER */
+    /* HEADER */
     #header {
         background: linear-gradient(40deg, #63b9ff, #add7fa);
 
@@ -804,7 +803,7 @@ table.customTable thead {
     #header-menu {
         display: none;
     }
-                                                                                         /* MAIN */
+    /* MAIN */
     .main-without-nav {
         flex: 3;
     }
@@ -836,7 +835,7 @@ table.customTable thead {
         width: 105%;
         height: 100vh;
         top: 0;
-        padding: 1rem 1rem 1rem 0rem;
+        padding: 1rem 1rem 1rem 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.5);
         display: flex;
@@ -850,8 +849,8 @@ table.customTable thead {
         visibility: visible;
         opacity: 1;
     }
- 
-                                                                             /* FOOTER */
+
+    /* FOOTER */
     #footer {
         background: linear-gradient(40deg, #4ab1e8, #99cce7);
         padding-top: 2rem;
@@ -861,9 +860,9 @@ table.customTable thead {
         display: block;
     }
     .footer-a-tags {
-        padding: 0rem 0rem;
-        margin: 0rem -2rem;
+        padding: 0;
+        margin: 0 -2rem;
         display: contents;
     }
- 
+
 }

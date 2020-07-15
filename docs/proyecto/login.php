@@ -15,7 +15,7 @@
     </head>
     <body>
 
-    <header id="header">
+        <header id="header">
             <div class="header-concursar">
                 <img src="../../img/escudo.png" class="escudo-header">
                 <h2 class="header-brand">
@@ -132,18 +132,18 @@
             </main>
             <footer id="footer">
 
-            <h2 class="footer-more-info">
-                <small>Mas información</small>
-            </h2>
-            <div class="footer-links">
-                <a class="footer-a-tags" href="https://www.argentina.gob.ar/educacion">| Ministerio de educación de la Nación |</a>
+                <h2 class="footer-more-info">
+                    <small>Mas información</small>
+                </h2>
+                <div class="footer-links">
+                    <a class="footer-a-tags" href="https://www.argentina.gob.ar/educacion">| Ministerio de educación de la Nación |</a>
 
-                <a class="footer-a-tags" href="https://www.argentina.gob.ar">| Portal de la Nación Argentina |</a>
+                    <a class="footer-a-tags" href="https://www.argentina.gob.ar">| Portal de la Nación Argentina |</a>
 
-                <a class="footer-a-tags" href="http://www.abc.gov.ar">| Portal de educación de la Prov de Buenos Aires |</a>
-            </div>
+                    <a class="footer-a-tags" href="http://www.abc.gov.ar">| Portal de educación de la Prov de Buenos Aires |</a>
+                </div>
 
-        </footer>
+            </footer>
             <script src="/edi2/scripts/proyecto-script.js"></script>
         </body>
     </html>
