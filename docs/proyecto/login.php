@@ -85,7 +85,8 @@
                                                 <input type="number" name="reg-user" required="REQUIRED"></div>
                                             <div class="reg-camp">
                                                 <label for="reg-name">Nombre:</label>
-                                                <input type="text" name="reg-name" required="REQUIRED">
+                                                <input type="text" name="reg-name" required="REQUIRED"></div>
+                                            <div class="reg-camp">  
                                                 <label for="reg-lastname">Apellido:</label>
                                                 <input type="text" name="reg-surname" required="REQUIRED"></div>
                                             <div class="reg-camp">
@@ -117,7 +118,8 @@
                                             </div>
                                             <div class="reg-camp">
                                                 <label for="reg-pass">Contraseña:</label>
-                                                <input type="password" name="reg-pass">
+                                                <input type="password" name="reg-pass"></div>
+                                                <div class="reg-camp">
                                                 <label for="reg-pass-repeat">Repita Contraseña:</label>
                                                 <input type="password" name="reg-pass-repeat"></div>
                                             <input type="submit" class="login-btn" value="Registrarse">

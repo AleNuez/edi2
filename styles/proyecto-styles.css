@@ -428,6 +428,10 @@ a {
     font-weight: bold;
     cursor: pointer;
 }
+.reg-camp {
+    flex: 1;
+    display: contents;
+}
 .modal-close-ap-search {
     position: absolute;
     top: 1rem;
@@ -756,6 +760,25 @@ table.customTable thead {
         visibility: visible;
         opacity: 1;
     }
+    .modal-a {
+        width: 50%;
+       
+    }
+    .modal-b {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 65%;
+        height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .reg-camp {
+        flex: 1;
+        
+    }
 
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
@@ -848,6 +871,21 @@ table.customTable thead {
         /* OCULTA, UNIVERSAL  */
         visibility: visible;
         opacity: 1;
+    }
+    .modal-a {
+        width: 40%;
+       
+    }
+    .modal-b {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 55%;
+        height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 
     /* FOOTER */
