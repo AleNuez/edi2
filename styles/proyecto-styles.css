@@ -82,6 +82,19 @@ body {
     width: 98%;
     padding: 3rem 1rem 7rem 0;
 }
+.registered {
+    padding: 5rem 0rem 10rem 1rem;
+}
+.registered-h1 {
+    font-size: 7vh;
+    padding: 0rem 2rem 3rem 0rem;
+    margin: 0rem 0rem;
+
+}
+.main-begin-btn-registered {
+    margin-top: 2rem;
+    padding: 1rem 3rem 1rem 1rem;
+}
 
 .profile-photo {
     align-content: center;
