@@ -21,7 +21,7 @@
         <main>
             <div class="main-without-nav">
                 <article id="article">
-                    <div class="hero-1">
+                    <div class="hero-1 registered">
                         <div class="white-font">
                             <h1 class="custom-h1 registered-h1">Registrado Correctamente!</h1>
                             <div class="main-begin-btn-registered">
