@@ -72,16 +72,7 @@ body {
 .main-begin-btn {
     margin-top: -3rem;
 }
-.hero-3 {
-    /* Aula con alumnos */
-    background-image: url("../img/001.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 27%;
-    height: 100%;
-    width: 98%;
-    padding: 3rem 1rem 7rem 0;
-}
+
 .registered {
     padding: 5rem 0rem 10rem 1rem;
 }
@@ -208,27 +199,47 @@ body {
     /* Nene mirando para arriba */
     background-image: url("../img/009.jpg");
     background-position-y: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero-2 {
     /* Jovenes estudiando */
     background-image: url("../img/002.jpg");
     background-position-y: 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-3 {
+    /* Aula con alumnos */
+    background-image: url("../img/001.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 27%;
+    height: 100%;
+    width: 98%;
+    padding: 3rem 1rem 7rem 0;
 }
 
 .hero-4 {
     /* Adolescentes en examen */
     background-image: url("../img/007.jpg");
     background-position-y: 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero-5 {
     /* Niños con banderas */
     background-image: url("../img/008.jpg");
     background-position-y: 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero-6 {
     /* aula a traves de la ventana */
     background-image: url("../img/008.jpg");
     background-position-y: 27%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .p-btn {
@@ -379,13 +390,13 @@ body {
 }
 
 .hr {
-    width: 30px;
+    width: 30px; 
     border: 5px white;
 }
 .header-brand {
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .copyright,
@@ -679,6 +690,11 @@ table.customTable thead {
     .main-without-nav {
         display: flex;
         flex: 1;
+    }
+    .header-brand {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 5px;
     }
     .header-concursar {
         display: inline-flex;
