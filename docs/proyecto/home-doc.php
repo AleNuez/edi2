@@ -7,7 +7,6 @@ $convertedName = ucfirst($name);
 $surname = $_SESSION['surname'];
 $convertedSurname = ucfirst($surname);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,9 +18,9 @@ $convertedSurname = ucfirst($surname);
     </head>
     <body>
 
+<header id="header">
 
-        <header id="header">
-            <div class="header-escudo">
+            <div class="header-concursar">
                 <a href="./home-doc.php" class="header-link"><img src="../../img/escudo.png" class="escudo-header">
                     <h2 class="header-brand">
                         ConcursAR</h2>
@@ -48,51 +47,54 @@ $convertedSurname = ucfirst($surname);
                     <p class="header-brand"><?php echo "{$convertedName} {$convertedSurname}"; ?></p>
                 </a>
             </div>
-        </header>
-        <main>
+</header>
+
+<main>
 
             <div class="main-without-nav">
                 <article id="article">
-                    <div class="hero-3">
+                    <div class="hero hero-3 home-padding">
 
                         <div class="white-font">
+
                             <h1 class="custom-h1"><?php echo "Hola $convertedName"; ?></h1>
                             <h2 class="custom-text welcome-text">
                                 ¿Que desea hacer?
                             </h2>
                             <ul class="home-opt">
-                                <li>
+                                <li class="list-flex">
                                     <a href="./actos-publicos.html" class="opt-btn white-font">Ver Actos Públicos</a>
                                 </li>
-                                <li>
+                                <li class="list-flex">
                                     <a href="./escuelas.html" class="opt-btn white-font">Ver escuelas</a>
                                 </li>
-                                <li>
+                                <li class="list-flex">
                                     <a href="./mi-postulacion.html" class="opt-btn white-font">Mi postulación</a>
                                 </li>
-                                <li>
+                                <li class="list-flex">
                                     <a href="./calendario.html" class="opt-btn white-font">Próximas fechas</a>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
                 </article>
 
             </div>
         </main>
+
         <footer id="footer">
 
-            <p class="copyright">
-                <h2>
-                    <small>Mas información</small>
-                </h2>
-                <a href="https://www.argentina.gob.ar/educacion">Ministerio de educación de la Nación</a>
-                |
-                <a href="https://www.argentina.gob.ar">Portal de la Nación Argentina</a>
-                |
-                <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
-            </p>
-        </footer>
+<h2 class="footer-more-info">
+    <small>Mas información</small>
+</h2>
+<div class="footer-links">
+    <a class="footer-a-tags" href="https://www.argentina.gob.ar/educacion">| Ministerio de educación de la Nación |</a>
+
+    <a class="footer-a-tags" href="https://www.argentina.gob.ar">| Portal de la Nación Argentina |</a>
+
+    <a class="footer-a-tags" href="http://www.abc.gov.ar">| Portal de educación de la Prov de Buenos Aires |</a>
+</div>
+
+</footer>
     </body>
 </html>

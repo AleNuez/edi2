@@ -91,6 +91,12 @@ body {
     margin: 0rem 0rem;
 
 }
+.home-padding {
+    padding: 6rem 0rem 4rem 0rem;
+}
+.list-flex {
+    flex: 1;
+}
 .main-begin-btn-registered {
     margin-top: 2rem;
     padding: 1rem 3rem 1rem 1rem;
@@ -123,14 +129,18 @@ body {
 .user-part {
     align-items: center;
     display: flex;
-    position: absolute;
-    right: 3rem;
+    justify-content: flex-end;
+    margin: 0rem 2rem 0rem 0rem;
+    flex: 1;
 }
 
 .home-opt {
     display: flex;
     list-style: none;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    margin: 0rem 3rem 1rem 0rem;
 }
 .prof-opt {
     display: flex;
@@ -188,51 +198,37 @@ body {
     background: linear-gradient(40deg, #5ed8ff, #d2f1fc);
 
 }
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 .hero-1 {
     /* Nene mirando para arriba */
     background-image: url("../img/009.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position-y: 70%;
-    height: 100%;
-    width: 100%;
 }
 .hero-2 {
     /* Jovenes estudiando */
     background-image: url("../img/002.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position-y: 27%;
-    height: 100%;
-    width: 100%;
 }
 
 .hero-4 {
     /* Adolescentes en examen */
     background-image: url("../img/007.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position-y: 27%;
-    height: 100%;
-    width: 100%;
 }
 .hero-5 {
     /* Niños con banderas */
     background-image: url("../img/008.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position-y: 27%;
-    height: 100%;
-    width: 100%;
 }
 .hero-6 {
     /* aula a traves de la ventana */
     background-image: url("../img/008.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position-y: 27%;
-    height: 100%;
-    width: 100%;
 }
 
 .p-btn {
@@ -305,6 +301,9 @@ body {
     text-decoration: none;
     font-weight: 700;
     margin: 5px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: darkgray;
 }
 .opt-profile-btn {
     width: 297px;
@@ -443,7 +442,7 @@ a {
 }
 .reg-camp {
     flex: 1;
-    display: contents;
+    display: grid;
 }
 .modal-close-ap-search {
     position: absolute;
@@ -742,6 +741,12 @@ table.customTable thead {
     .log-row {
         display: flex;
         flex-direction: row;
+    }
+    .home-opt {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .modal-bg-ap-search,
