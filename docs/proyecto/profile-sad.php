@@ -1,3 +1,13 @@
+<?php
+include("conexion.php");
+session_start();
+$usuario = $_SESSION['username'];
+$name = $_SESSION['name'];
+$convertedName = ucfirst($name);
+$surname = $_SESSION['surname'];
+$convertedSurname = ucfirst($surname);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,17 +18,10 @@
         <title>Mi Perfil | ConcursAR</title>
     </head>
     <body>
-        <?php
-include("conexion.php");
-session_start();
-$usuario = $_SESSION['username'];
-$name = $_SESSION['name'];
-$convertedName = ucfirst($name);
-$surname = $_SESSION['surname'];
-$convertedSurname = ucfirst($surname);
-?>
-        <header id="header">
-            <div class="header-escudo">
+       
+<header id="header">
+
+            <div class="header-concursar">
                 <a href="./home-sad.php" class="header-link"><img src="../../img/escudo.png" class="escudo-header">
                     <h2 class="header-brand">
                         ConcursAR</h2>
@@ -46,16 +49,17 @@ $convertedSurname = ucfirst($surname);
                     <p class="header-brand"><?php echo "{$convertedName} {$convertedSurname}"; ?></p>
                 </a>
             </div>
-        </header>
-        <main>
+</header>
+
+<main>
 
             <div class="main-without-nav">
                 <article id="article">
-                    <div class="hero-5 ">
+                    <div class="hero hero-5 profile-padding">
 
                         <div class="white-font flex-parent">
                             <div class="col-1">
-                                <h1 class="custom-h1 smaller">Perfil Administrativo (SAD)</h1>
+                                <h1 class="custom-h1 smaller profile-title">Perfil Administrativo (SAD)</h1>
                                 <div class="profile-photo">
                                     <?php
                 $buscarImgs = "SELECT image FROM users WHERE user='$usuario' ";
@@ -76,6 +80,7 @@ $convertedSurname = ucfirst($surname);
                                     <button id="profile-pic-btn" class="prof-btn white-font">Cambiar foto de perfil</button>
                                 </div>
                             </div>
+
                             <div class="col-2">
                                 <h2 class="custom-text welcome-text">
                                     ¿Que desea hacer?
@@ -97,7 +102,7 @@ $convertedSurname = ucfirst($surname);
                     </div>
 
                 </article>
-
+            <!-- empiza modal profile picture -->
                 <div class="tabla">
                     <div class="profile-pic-modal">
                         <form
@@ -126,11 +131,11 @@ $convertedSurname = ucfirst($surname);
                                     type="submit"
                                     class="login-btn"
                                     value="Cargar">
-                                <a class="close-btn" href="./profile-sad.php">Cancelar</a>
+                                <!-- <a class="close-btn" href="./profile-sad.php">Cancelar</a> -->
                             </div>
                         </form>
                     </div>
-                    <!-- termina modal profile -->
+                    <!-- termina modal profile picture -->
 
                     <div class="profile-view-modal">
                         <form
@@ -322,17 +327,18 @@ $convertedSurname = ucfirst($surname);
                 </main>
                 <footer id="footer">
 
-                    <p class="copyright">
-                        <h2>
-                            <small>Mas información</small>
-                        </h2>
-                        <a href="https://www.argentina.gob.ar/educacion">Ministerio de educación de la Nación</a>
-                        |
-                        <a href="https://www.argentina.gob.ar">Portal de la Nación Argentina</a>
-                        |
-                        <a href="http://www.abc.gov.ar">Portal de educación de la Prov de Buenos Aires</a>
-                    </p>
-                </footer>
+<h2 class="footer-more-info">
+    <small>Mas información</small>
+</h2>
+<div class="footer-links">
+    <a class="footer-a-tags" href="https://www.argentina.gob.ar/educacion">| Ministerio de educación de la Nación |</a>
+
+    <a class="footer-a-tags" href="https://www.argentina.gob.ar">| Portal de la Nación Argentina |</a>
+
+    <a class="footer-a-tags" href="http://www.abc.gov.ar">| Portal de educación de la Prov de Buenos Aires |</a>
+</div>
+
+</footer>
                 <script src="../../scripts/profile-script.js"></script>
                 <script>
                     function showpass() {

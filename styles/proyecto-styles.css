@@ -85,6 +85,9 @@ body {
 .home-padding {
     padding: 6rem 0rem 4rem 0rem;
 }
+.profile-padding {
+    padding: 3rem 0rem 4rem 0rem;
+}
 .list-flex {
     flex: 1;
 }
@@ -138,6 +141,8 @@ body {
     flex-direction: column;
     list-style: none;
     justify-content: space-around;
+    align-items: center;
+    margin: 0rem 1rem -3rem -1rem;
 }
 .prof-btn {
     width: 251px;
@@ -272,15 +277,18 @@ body {
 }
 .flex-parent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.profile-title {
+    padding: 0rem 1rem 2rem 1rem;
 }
 .col-1 {
     flex: 1;
-    padding: 1rem 2rem;
+    padding: 0rem 0rem;
 }
 .col-2 {
     flex: 1;
-    padding: 10rem 0 1rem;
+    padding: 0rem 0 1rem;
 }
 .more-btn {
     padding: 0.5rem 2.5rem;
@@ -758,11 +766,37 @@ table.customTable thead {
         display: flex;
         flex-direction: row;
     }
+    .profile-title {
+        padding: 0rem;
+    }
     .home-opt {
         display: flex;
         list-style: none;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .profile-padding {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .flex-parent {
+        display: flex;
+        flex-direction: row;
+    }
+    .col-1 {
+        flex: 1;
+        padding: 1rem 2rem;
+    }
+    .col-2 {
+        flex: 1;
+        padding: 10rem 0 1rem;
+    }
+    .prof-opt {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: -1rem 0rem 0rem -5rem;
     }
 
     .modal-bg-ap-search,
@@ -876,6 +910,17 @@ table.customTable thead {
     #aside {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
 
+    }
+    .profile-padding {
+        padding: 6rem 0rem 4rem 0rem;
+    }
+    .prof-opt {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0rem 2rem -3rem -1rem;
     }
     .modal-bg-ap-search,
     .modal-bg-login,
