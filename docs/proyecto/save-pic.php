@@ -33,7 +33,6 @@ $user = $_SESSION['username'];
 $rol = $_SESSION['rol'];
 $imagen = $_FILES['Imagen']['tmp_name'];
 
-
 $Img = addslashes(file_get_contents($imagen)); //tmp_name: nombre del arhivo en el SO
 //$Img = resize_image($imagen, 200, 200);
 $saveImg = "UPDATE users SET image='$Img' WHERE user = '$user'";
