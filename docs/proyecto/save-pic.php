@@ -30,6 +30,7 @@ function resize_image($file, $w, $h, $crop=FALSE) {
 include('conexion.php');
 session_start();
 $user = $_SESSION['username'];
+$rol = $_SESSION['rol'];
 $imagen = $_FILES['Imagen']['tmp_name'];
 
 
@@ -41,10 +42,40 @@ $resultadosave = $conexion->query($saveImg);
 
 if($resultadosave){
    
-    header("location: ./profile-doc.php");
+    switch($rol){
+        case "profesor":
+            header("location: ./profile-doc.php"); // redirecciono al home.
+        break;
+        case "maestro":
+            header("location: ./profile-doc.php"); // redirecciono al home.
+        break;
+        case "preceptor":
+            header("location: ./profile-doc.php"); // redirecciono al home.
+        break;
+        case "secretario":
+            header("location: ./profile-sec.php"); // redirecciono al home.
+        break;
+        case "sad":
+            header("location: ./profile-sad.php"); // redirecciono al home.
+    }
 } else {
+    switch($rol){
+        case "profesor":
+            header("location: ./profile-doc.php"); // redirecciono al home.
+        break;
+        case "maestro":
+            header("location: ./profile-doc.php"); // redirecciono al home.
+        break;
+        case "preceptor":
+            header("location: ./profile-doc.php"); // redirecciono al home.
+        break;
+        case "secretario":
+            header("location: ./profile-sec.php"); // redirecciono al home.
+        break;
+        case "sad":
+            header("location: ./profile-sad.php"); // redirecciono al home.
+    }
    
-    header("location: ./profile-doc.php");
     
 }
 
