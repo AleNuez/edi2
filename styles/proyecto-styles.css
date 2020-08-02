@@ -114,7 +114,7 @@ body {
 }
 .file-loader {
     display: flex;
-    margin: 2rem 2rem 1rem 0;
+    margin: 1rem -4rem 1rem 0;
 }
 .botonera {
     align-content: space-between;
@@ -573,9 +573,9 @@ a {
     color: black;
     background-color: #d3f4ff;
     width: 75%;
-    height: 90%;
+    height: 46%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -584,22 +584,43 @@ a {
     color: black;
     background-color: #d3f4ff;
     width: 75%;
-    height: 90%;
+    height: 145%;
+    top: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+/* .view-profile-spec {
+    height: ;
+} */
+.smaller-profile {
+    width: 150px;
+    height: 150px;
+}
+.all-forms {
+    width: 11rem;
 }
 .profile-edit-modal-style {
     position: relative;
     color: black;
     background-color: #d3f4ff;
     width: 75%;
-    height: 90%;
+    height: 165%;
+    top: 14rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+.puntaje-camp {
+    width: 69%;
+}
+.pass-camp {
+    width: 75%;
+}
+.passandimg {
+    display: flex;
 }
 .sec-upload-modal-style {
     position: relative;
@@ -798,6 +819,22 @@ table.customTable thead {
         align-items: center;
         margin: -1rem 0rem 0rem -5rem;
     }
+    .file-loader {
+        display: flex;
+        margin: 2rem 2rem 1rem 0;
+    }
+    .profile-view-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 77%;
+        height: 120%;
+        top: 7rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
 
     .modal-bg-ap-search,
     .modal-bg-login,
@@ -846,6 +883,33 @@ table.customTable thead {
     .reg-camp {
         flex: 1;
         
+    }
+    .profile-pic-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 75%;
+        height: 65%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .smaller-profile {
+        width: 250px;
+        height: 250px;
+    }
+    .profile-edit-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 58%;
+        height: 164%;
+        top: 12rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 
     #aside {
@@ -961,6 +1025,34 @@ table.customTable thead {
         background-color: #d3f4ff;
         width: 55%;
         height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .smaller-profile {
+        width: 300px;
+        height: 300px;
+    }
+    .profile-view-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 60%;
+        height: 120%;
+        top: 7rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .profile-edit-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 40%;
+        height: 164%;
+        top: 12rem;
         display: flex;
         justify-content: space-around;
         align-items: center;

@@ -22,7 +22,7 @@ if($array['contar']>0){  // Si hay un resultado en el array...
     $_SESSION['username'] = $usuario; //tomo el usuario desde la bd, o sea su identificacion
     $rol = $datosObtenidos['rol'];
     $_SESSION['error'] = !$error; // guardo en la sesion que error es false, o sea , todo bien.
-   
+    $_SESSION['rol'] = $rol;
     switch($rol){
         case "profesor":
             header("location: home-doc.php"); // redirecciono al home.

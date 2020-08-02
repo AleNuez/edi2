@@ -128,19 +128,21 @@ $convertedSurname = ucfirst($surname);
 
                             <div style="justify-content:space-between; display:flex;" class="botonera">
                                 <input
-                                    style="padding:0rem 3rem;margin:0.3rem 0.3rem;"
+                                   
                                     type="submit"
                                     class="login-btn"
                                     value="Cargar">
-                                <a class="close-btn" href="./profile-sec.php">Cancelar</a>
+                                <!-- <a class="close-btn" href="./profile-sec.php">Cancelar</a> -->
                             </div>
                         </form>
                     </div>
                     <!-- termina modal profile -->
 
+                    <!-- empieza modal view profile -->
+
                     <div class="profile-view-modal">
                         <form
-                            class="profile-view-modal-style"
+                            class="profile-view-modal-style view-profile-spec"
                             method="POST"
                             action="./profile-sec.html">
 
@@ -157,11 +159,11 @@ $convertedSurname = ucfirst($surname);
             ?>
                                         <img
                                             src="data:image/jpg;base64,<?php echo base64_encode($colocar['image']); ?>"
-                                            class="user-profile">
+                                            class="user-profile smaller-profile">
                                     <?php
             }else {
             ?>
-                                        <img src="../../img/default-user.jpg" class="user-profile">
+                                        <img src="../../img/default-user.jpg" class="user-profile smaller-profile">
                                         <?php
             }
             ?>
@@ -212,20 +214,21 @@ $convertedSurname = ucfirst($surname);
                             </form>
                         </div>
 
-                        <!-- termina modal profile -->
+                        <!-- termina modal profile view -->
                         <div class="profile-edit-modal">
                             <!-- FORM EDIT -->
                             <form action="./edit.php" method="POST" class="profile-edit-modal-style">
+                            <div class="all-forms">
                                 <div class="reg-camp">
                                     <h3>Actualizar Datos</h3>
                                 </div>
                                 <div class="reg-camp">
-                                    <label for="login-user">DNI:</label>
+                                    <!-- <label for="login-user">DNI:</label>
                                     <input
                                         value="<?php echo "$show_dni"; ?>"
                                         type="number"
                                         name="edit-user"
-                                        required="REQUIRED">
+                                        required="REQUIRED"> -->
                                     <label for="reg-dob">Fecha de nacimiento:</label>
                                     <input
                                         type="date"
@@ -248,11 +251,13 @@ $convertedSurname = ucfirst($surname);
                                         name="edit-apellido"
                                         required="REQUIRED"></div>
                                 <div class="reg-camp">
-                                    <label for="reg-rol">Rol en la Plataforma:</label>
+                                   <!--  <label for="reg-rol">Rol en la Plataforma:</label>
                                     <select name="edit-rol" id="reg-rol" required="REQUIRED">
                                         <option value="NUL">-- Seleccione --</option>
                                         <optgroup label="Secretaria Asuntos Doc">
-                                            <option value="sad" <?php if($show_cargo=="Sad"){echo "selected";} ?>>
+                                            <option value="sad" 
+                                            <?php if($show_cargo=="Sad"){echo "selected";} ?>
+                                            >
                                                 Administrativo del SAD
                                             </option>
                                         </optgroup>
@@ -268,7 +273,7 @@ $convertedSurname = ucfirst($surname);
                                                 value="preceptor"
                                                 <?php if($show_cargo=="Preceptor"){echo "selected";} ?>>Preceptor</option>
                                         </optgroup>
-                                    </select>
+                                    </select> -->
                                     <label for="reg-area">Area:</label>
                                     <input value="<?php echo "$show_area"; ?>" type="text" name="edit-area">
                                     <label for="reg-especialidad">Especialidad:</label>
@@ -304,24 +309,27 @@ $convertedSurname = ucfirst($surname);
                                         type="file"
                                         name="edit-documentacion">
                                     <label for="reg-puntaje">Puntaje:</label>
-                                    <input value="<?php echo "$show_puntaje"; ?>" type="text" name="edit-puntaje">
+                                    <input class="puntaje-camp" value="<?php echo "$show_puntaje"; ?>" type="text" name="edit-puntaje">
                                 </div>
                                 <div class="reg-camp">
                                     <label for="reg-pass">Contraseña:</label>
-                                    <input
+                                    <div class="passandimg"><input
+                                        required
                                         id="hidden-password"
-                                        value="<?php echo "$show_password"; ?>"
+                                       class="pass-camp"
                                         type="password"
                                         name="edit-pass">
                                     <img onmousedown="showpass()" onmouseup="hidepass()" class="view-password"></img>
+                                    </div>
                                     <label for="reg-pass-repeat">
                                         Confirme Contraseña:</label>
                                     <input
-                                        value="<?php echo "$show_password"; ?>"
+                                        
                                         type="password"
                                         name="edit-pass-repeat"></div>
                                 <input type="submit" class="login-btn" value="Actualizar">
                                 <span class="profile-edit-close">X</span>
+                            </div> <!-- termina all reg -->
                             </form>
                         </div>
                         <!-- termina modal profile -->
