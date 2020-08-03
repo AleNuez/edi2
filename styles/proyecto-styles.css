@@ -85,6 +85,9 @@ body {
 .home-padding {
     padding: 6rem 0rem 4rem 0rem;
 }
+.profile-padding {
+    padding: 3rem 0rem 4rem 0rem;
+}
 .list-flex {
     flex: 1;
 }
@@ -111,7 +114,7 @@ body {
 }
 .file-loader {
     display: flex;
-    margin: 2rem 2rem 1rem 0;
+    margin: 1rem -4rem 1rem 0;
 }
 .botonera {
     align-content: space-between;
@@ -138,6 +141,8 @@ body {
     flex-direction: column;
     list-style: none;
     justify-content: space-around;
+    align-items: center;
+    margin: 0rem 1rem -3rem -1rem;
 }
 .prof-btn {
     width: 251px;
@@ -272,15 +277,18 @@ body {
 }
 .flex-parent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+.profile-title {
+    padding: 0rem 1rem 2rem 1rem;
 }
 .col-1 {
     flex: 1;
-    padding: 1rem 2rem;
+    padding: 0rem 0rem;
 }
 .col-2 {
     flex: 1;
-    padding: 10rem 0 1rem;
+    padding: 0rem 0 1rem;
 }
 .more-btn {
     padding: 0.5rem 2.5rem;
@@ -565,9 +573,9 @@ a {
     color: black;
     background-color: #d3f4ff;
     width: 75%;
-    height: 90%;
+    height: 46%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -576,22 +584,43 @@ a {
     color: black;
     background-color: #d3f4ff;
     width: 75%;
-    height: 90%;
+    height: 145%;
+    top: 7rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+/* .view-profile-spec {
+    height: ;
+} */
+.smaller-profile {
+    width: 150px;
+    height: 150px;
+}
+.all-forms {
+    width: 11rem;
 }
 .profile-edit-modal-style {
     position: relative;
     color: black;
     background-color: #d3f4ff;
     width: 75%;
-    height: 90%;
+    height: 165%;
+    top: 14rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+}
+.puntaje-camp {
+    width: 69%;
+}
+.pass-camp {
+    width: 75%;
+}
+.passandimg {
+    display: flex;
 }
 .sec-upload-modal-style {
     position: relative;
@@ -758,11 +787,53 @@ table.customTable thead {
         display: flex;
         flex-direction: row;
     }
+    .profile-title {
+        padding: 0rem;
+    }
     .home-opt {
         display: flex;
         list-style: none;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .profile-padding {
+        padding: 0rem 0rem 0rem 0rem;
+    }
+    .flex-parent {
+        display: flex;
+        flex-direction: row;
+    }
+    .col-1 {
+        flex: 1;
+        padding: 1rem 2rem;
+    }
+    .col-2 {
+        flex: 1;
+        padding: 10rem 0 1rem;
+    }
+    .prof-opt {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: -1rem 0rem 0rem -5rem;
+    }
+    .file-loader {
+        display: flex;
+        margin: 2rem 2rem 1rem 0;
+    }
+    .profile-view-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 77%;
+        height: 120%;
+        top: 7rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 
     .modal-bg-ap-search,
@@ -812,6 +883,33 @@ table.customTable thead {
     .reg-camp {
         flex: 1;
         
+    }
+    .profile-pic-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 75%;
+        height: 65%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .smaller-profile {
+        width: 250px;
+        height: 250px;
+    }
+    .profile-edit-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 58%;
+        height: 164%;
+        top: 12rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
     }
 
     #aside {
@@ -877,6 +975,17 @@ table.customTable thead {
         background: linear-gradient(40deg, #5ed8ff, #d3f4ff);
 
     }
+    .profile-padding {
+        padding: 6rem 0rem 4rem 0rem;
+    }
+    .prof-opt {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0rem 2rem -3rem -1rem;
+    }
     .modal-bg-ap-search,
     .modal-bg-login,
     .modal-bg-postula,
@@ -916,6 +1025,34 @@ table.customTable thead {
         background-color: #d3f4ff;
         width: 55%;
         height: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .smaller-profile {
+        width: 300px;
+        height: 300px;
+    }
+    .profile-view-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 60%;
+        height: 120%;
+        top: 7rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .profile-edit-modal-style {
+        position: relative;
+        color: black;
+        background-color: #d3f4ff;
+        width: 40%;
+        height: 164%;
+        top: 12rem;
         display: flex;
         justify-content: space-around;
         align-items: center;
