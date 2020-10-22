@@ -1,0 +1,1 @@
+Liga_ID|Fecha|Equipo|Resultado|Contrincante|Resultado|PartidoN

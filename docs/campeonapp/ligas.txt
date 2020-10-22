@@ -1,0 +1,1 @@
+ID_Torneo|NombreTorneo|Organizador|Estado|fechaActual|Clave

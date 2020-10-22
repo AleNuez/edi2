@@ -1,0 +1,35 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.main-contenedor {
+    background-color: rgb(151, 206, 151);
+    width: 20rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.main-login {
+    display: flex;
+    flex-direction: column;
+}
+.campo {
+    padding: 1rem;
+}
+.center-message {
+    position: relative;
+    top: 50%;
+}
+.marcador {
+    width: 2rem;
+    height: 2rem;
+    margin: 5px;
+}
+.adjust-c {
+    padding-left: 2rem;
+}
+.fecha-selector {
+    display: flex;
+    flex-direction: column;
+}

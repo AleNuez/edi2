@@ -1,0 +1,17 @@
+ID_Torneo|ID_Usuario|Rol
+1|1|Organizador
+1|2|Participante
+1|3|Participante
+1|4|Participante
+1|5|Participante
+6|6|Organizador
+1|9|Participante
+10|10|Organizador
+11|11|Organizador
+11|11|Organizador
+12|12|Organizador
+13|13|Organizador
+14|14|Organizador
+1|1|Organizador
+1|1|Organizador
+1|1|Organizador

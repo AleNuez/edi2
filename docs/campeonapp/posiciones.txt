@@ -1,0 +1,1 @@
+LigaID|Fecha|Equipo|Posicion|Ganados|Empatados|Perdidos|Jugados|Puntos
